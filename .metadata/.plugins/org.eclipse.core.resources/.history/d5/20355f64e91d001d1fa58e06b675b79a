@@ -1,0 +1,63 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+     <%@ page import = "com.boardone.BoardDAO"%>
+     <%@ page import = "com.boardone.BoardVO"%>
+     <%@ page import = "java.util.List"%>
+     <%@ page import = "java.text.SimpleDateFormat"%>
+     <%@include file="view/color.jsp"%>
+     
+     
+     <%
+     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd-hh:mm");
+     %>
+     
+     <%
+     int count = 0;
+     int number = 0;
+     List<BoardVO> articleList = null;
+     BoardDAO dbPro = BoardDAO.getInstance();//<===db연결
+    		 
+     count = dbPro.getArticleCount();
+     
+     if(count > 0){
+    	 articleList = dbPro.getArticles();
+     }
+     
+     number = count;
+     
+     %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor = "<%=bodyback_c%>">
+
+<div align = "center"><b>글 목록(전체 글:<%=count %>)</b>
+
+<table width="700">
+<tr>
+	<td align = "right" bgcolor = "<%=value_c%>">
+	
+	
+	
+	
+	</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+
+
+</div>
+
+
+</body>
+</html>

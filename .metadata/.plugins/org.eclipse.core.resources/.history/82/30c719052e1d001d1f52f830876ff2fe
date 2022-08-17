@@ -1,0 +1,24 @@
+package com.teamproject;
+
+import java.sql.*;
+import javax.sql.*;
+import javax.naming.*;
+
+public class ConnUtil {
+
+	private static DataSource ds;
+
+	static {
+
+		try {
+
+		} catch (Exception e) {
+
+		}
+
+	}
+
+	public static Connection getConnection() throws SQLException {
+		return ds.getConnection();
+	}
+}

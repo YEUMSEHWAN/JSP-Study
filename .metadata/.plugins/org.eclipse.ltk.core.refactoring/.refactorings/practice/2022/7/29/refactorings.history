@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ysh.practice.TvTest3&apos; to &apos;TvTest4&apos;&#x0D;&#x0A;- Original project: &apos;practice&apos;&#x0D;&#x0A;- Original element: &apos;com.ysh.practice.TvTest3&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ysh.practice.TvTest4&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TvTest3&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.ysh.practice{TvTest3.java[TvTest3" matchStrategy="1" name="TvTest4" qualified="false" references="true" similarDeclarations="false" stamp="1657796182599" textual="false" version="1.0"/>
+</session>

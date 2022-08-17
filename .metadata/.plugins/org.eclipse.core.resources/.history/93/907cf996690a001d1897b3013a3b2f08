@@ -1,0 +1,106 @@
+package com.ysh.swingproject;
+
+import java.awt.*;
+import javax.management.MBeanAttributeInfo;
+import javax.swing.*;
+
+public class MenuEx extends JFrame {
+
+	JPanel panel1 = new JPanel();
+	JPanel panel2 = new JPanel();
+	JPanel panel3 = new JPanel();
+	JPanel panel4 = new JPanel();
+	JPanel panel5 = new JPanel();
+	JPanel panel6 = new JPanel();
+	JPanel panel7 = new JPanel();
+	JPanel panel8 = new JPanel();
+	JPanel panel9 = new JPanel();
+
+	JTextField text1 = new JTextField(10);
+	JTextField text2 = new JTextField(10);
+	JTextField text3 = new JTextField(10);
+	JTextField text4 = new JTextField(10);
+	JTextArea area1 = new JTextArea(30,20);
+	JTextArea area2 = new JTextArea(30,20);
+
+	JButton button1 = new JButton();
+	JButton button2 = new JButton();
+
+	JMenuBar bar = new JMenuBar();
+	String box[] = { "용돈", "월급", "기타" };
+	String box2[] = { "식비", "주거비", "생활비" };
+	JComboBox<String> combo = new JComboBox(box);
+	JComboBox<String> combo2 = new JComboBox(box2);
+	Container c = getContentPane();
+	
+	
+	
+
+	public MenuEx() {
+		setTitle("가계부");
+		createMenu();
+		setSize(1000, 600);
+		setVisible(true);
+	}
+
+	// 메뉴를 만들어 프레임 삽입
+	public void createMenu() {
+		GridLayout grid = new GridLayout(1,2);
+		grid.setVgap(5);
+
+		JMenu screenMenu1 = new JMenu("기능");
+		screenMenu1.add(new JMenuItem("저장하기"));
+		screenMenu1.add(new JMenuItem("불러오기"));
+
+		JMenu screenMenu2 = new JMenu("계산기");
+		screenMenu2.add(new JMenuItem("실행하기"));
+
+		JMenu screenMenu3 = new JMenu("도움말");
+		screenMenu3.add(new JMenuItem("정보"));
+
+		// 메뉴바에 메뉴 삽입
+		bar.add(screenMenu1);
+		bar.add(screenMenu2);
+		bar.add(screenMenu3);
+
+		setJMenuBar(bar);
+//=====================================================
+		
+		
+		panel1.add(new JLabel("수입"));
+		panel1.add(combo);
+		panel1.add(new JLabel("금액"));
+		panel1.add(text1);
+		panel1.add(new JLabel("메모"));
+		panel1.add(text2);
+		panel1.add(new JLabel("지출"));
+		panel1.add(combo2);
+		panel1.add(new JLabel("금액"));
+		panel1.add(text3);
+		panel1.add(new JLabel("메모"));
+		panel1.add(text4);
+		button1.add(new JButton("INCOME"));
+		button2.add(new JButton("EXPENCE"));
+		panel2.add(button1);
+		panel2.add(button2);
+		panel3.add(area1);
+		panel3.add(area2);
+		
+		c.setLayout(grid);
+		c.add(panel1);
+		
+		
+		
+//		panel1.add(FlowLayout.LEFT,10,20);
+//		c.add(panel2,BorderLayout.SOUTH);
+//		c.add(panel3,BorderLayout.CENTER);
+	
+	}
+
+	public static void main(String[] args) {
+		new MenuEx();
+		new JComboBox();
+		new JLabel();
+	}
+
+}
