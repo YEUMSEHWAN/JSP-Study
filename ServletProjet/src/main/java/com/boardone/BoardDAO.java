@@ -147,9 +147,11 @@ public class BoardDAO {
 	}
 
 	/*
-	 * board 테이블에서 데이터를 가져와서 보여줄 메소드를 추가 List<BoardVO>
+	 * board 테이블에서 데이터를 가져와서 보여줄 메소드를 추가 List<BoardVO> start는 시작 번호, end는 끝 번호를 의미.
+	 * 
+	 * 
 	 */
-	public List<BoardVO> getArticles() {
+	public List<BoardVO> getArticles(int start, int end) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -158,11 +160,19 @@ public class BoardDAO {
 
 		try {
 			conn = ConnUtil.getConnection();
-			pstmt = conn.prepareStatement("select * from board order by num desc");
+
+			// pstmt = conn.prepareStatement("select * from board order by num desc");
+			pstmt = conn.prepareStatement("select * from (" + "select rownum rnum, num, writer, email, subject, "
+					+ "pass, regdate, readcount, ref, step, depth, content, ip from ("
+					+ "select * from board order by ref desc, step asc)) " + "where rnum >=? and rnum <= ? ");
+
+			pstmt.setInt(1, start);
+			pstmt.setInt(2, end);
+
 			rs = pstmt.executeQuery();
 
 			if (rs.next()) {
-				articleList = new ArrayList<BoardVO>();
+				articleList = new ArrayList<BoardVO>(end - start + 1);
 				do {
 					BoardVO article = new BoardVO();
 					article.setNum(rs.getInt("num"));
@@ -220,32 +230,31 @@ public class BoardDAO {
 		try {
 			conn = ConnUtil.getConnection();
 			pstmt = conn.prepareStatement("update board set readcount=readcount+1 where num=?");
-			pstmt.setInt(1,num);
+			pstmt.setInt(1, num);
 			pstmt.executeUpdate();
-			
+
 			pstmt = conn.prepareStatement("select * from board where num=?");
-			pstmt.setInt(1,num);
+			pstmt.setInt(1, num);
 			pstmt.executeQuery();
-			rs=pstmt.executeQuery();
-			
-			if(rs.next()) {
+			rs = pstmt.executeQuery();
+
+			if (rs.next()) {
 				article = new BoardVO();
-					article.setNum(rs.getInt("num"));
-					article.setWriter(rs.getString("writer"));
-					article.setEmail(rs.getString("email"));
-					article.setSubject(rs.getString("subject"));
-					article.setPass(rs.getString("pass"));
-					article.setRegdate(rs.getTimestamp("regdate"));
-					article.setReadcount(rs.getInt("readcount"));
-					article.setRef(rs.getInt("ref"));
-					article.setStep(rs.getInt("step"));
-					article.setDepth(rs.getInt("depth"));
-					article.setContent(rs.getString("content"));
-					article.setIp(rs.getString("ip"));
-					
-					
+				article.setNum(rs.getInt("num"));
+				article.setWriter(rs.getString("writer"));
+				article.setEmail(rs.getString("email"));
+				article.setSubject(rs.getString("subject"));
+				article.setPass(rs.getString("pass"));
+				article.setRegdate(rs.getTimestamp("regdate"));
+				article.setReadcount(rs.getInt("readcount"));
+				article.setRef(rs.getInt("ref"));
+				article.setStep(rs.getInt("step"));
+				article.setDepth(rs.getInt("depth"));
+				article.setContent(rs.getString("content"));
+				article.setIp(rs.getString("ip"));
+
 			}
-			
+
 		} catch (SQLException s1) {
 			s1.printStackTrace();
 		} finally {
@@ -267,13 +276,12 @@ public class BoardDAO {
 		}
 		return article;
 
-	}//end Article..
-	
+	}// end Article..
+
 	/*
 	 * 글 수정 버튼을 누를 경우 updateForm.jsp 페이지로 이동하도록 링크를 걸었다.
 	 * 
-	 * 글 수정시 글 목록보기와 다르게 조회수를 증가시키지 않는다.
-	 * 조회수 증가를 제외하고 num 에 저장하는 글만 가져오는 메소드를 구현한다.
+	 * 글 수정시 글 목록보기와 다르게 조회수를 증가시키지 않는다. 조회수 증가를 제외하고 num 에 저장하는 글만 가져오는 메소드를 구현한다.
 	 */
 
 	public BoardVO updateGetArticle(int num) {
@@ -281,33 +289,32 @@ public class BoardDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		BoardVO article = null;
-		
+
 		try {
 			conn = ConnUtil.getConnection();
-			
+
 			pstmt = conn.prepareStatement("select * from board where num=?");
-			pstmt.setInt(1,num);
-			
-			rs=pstmt.executeQuery();
-			
-			if(rs.next()) {
+			pstmt.setInt(1, num);
+
+			rs = pstmt.executeQuery();
+
+			if (rs.next()) {
 				article = new BoardVO();
-					article.setNum(rs.getInt("num"));
-					article.setWriter(rs.getString("writer"));
-					article.setEmail(rs.getString("email"));
-					article.setSubject(rs.getString("subject"));
-					article.setPass(rs.getString("pass"));
-					article.setRegdate(rs.getTimestamp("regdate"));
-					article.setReadcount(rs.getInt("readcount"));
-					article.setRef(rs.getInt("ref"));
-					article.setStep(rs.getInt("step"));
-					article.setDepth(rs.getInt("depth"));
-					article.setContent(rs.getString("content"));
-					article.setIp(rs.getString("ip"));
-					
-					
+				article.setNum(rs.getInt("num"));
+				article.setWriter(rs.getString("writer"));
+				article.setEmail(rs.getString("email"));
+				article.setSubject(rs.getString("subject"));
+				article.setPass(rs.getString("pass"));
+				article.setRegdate(rs.getTimestamp("regdate"));
+				article.setReadcount(rs.getInt("readcount"));
+				article.setRef(rs.getInt("ref"));
+				article.setStep(rs.getInt("step"));
+				article.setDepth(rs.getInt("depth"));
+				article.setContent(rs.getString("content"));
+				article.setIp(rs.getString("ip"));
+
 			}
-			
+
 		} catch (SQLException s1) {
 			s1.printStackTrace();
 		} finally {
@@ -328,50 +335,47 @@ public class BoardDAO {
 				}
 		}
 		return article;
-		
-		
-	}//end updateGetArticle
-	
-	
-	
+
+	}// end updateGetArticle
+
 	public int updateArticle(BoardVO article) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		
+
 		String dbpasswd = "";
 		String strQuery = "";
 		int result = -1;
-		
+
 		try {
-			
+
 			conn = ConnUtil.getConnection();
 			pstmt = conn.prepareStatement("select pass from board where num=?");
 			pstmt.setInt(1, article.getNum());
 			rs = pstmt.executeQuery();
-					
-					if(rs.next()) {
-						dbpasswd = rs.getString("pass");
-						
-						if(dbpasswd.equals(article.getPass())) {
-							
-							strQuery = "update board set writer=?,email=?,subject=?,content=? where num=?";
-							pstmt = conn.prepareStatement(strQuery);
-							pstmt.setString(1, article.getWriter());
-							pstmt.setString(2, article.getEmail());
-							pstmt.setString(3, article.getSubject());
-							pstmt.setString(4, article.getContent());
-							pstmt.setInt(5, article.getNum());
-							
-							pstmt.executeUpdate();
-							result = 1;//수정성공
-						}else {
-							result = 0;//수정 실패
-						}
-					}
-			
-			
-		}catch (SQLException s1) {
+
+			if (rs.next()) {
+				dbpasswd = rs.getString("pass");
+
+				if (dbpasswd.equals(article.getPass())) {
+
+					strQuery = "update board set writer=?,email=?,subject=?,content=? where num=?";
+					pstmt = conn.prepareStatement(strQuery);
+
+					pstmt.setString(1, article.getWriter());
+					pstmt.setString(2, article.getEmail());
+					pstmt.setString(3, article.getSubject());
+					pstmt.setString(4, article.getContent());
+					pstmt.setInt(5, article.getNum());
+
+					pstmt.executeUpdate();
+					result = 1;// 수정성공
+				} else {
+					result = 0;// 수정 실패
+				}
+			}
+
+		} catch (SQLException s1) {
 			s1.printStackTrace();
 		} finally {
 			if (rs != null)
@@ -391,17 +395,168 @@ public class BoardDAO {
 				}
 		}
 		return result;
-	
-		
-		
-		
+
+	}// end updateArticle
+
+	/*
+	 * 글 삭제 처리하기. 글 삭제 폼에서 비밀번호를 입력하고 삭제를 수행하면 데이터베이스에서 비밀번호를 검색해서 비밀번호가 일치하면 삭제를
+	 * 수행하고 그렇지 않으면 비밀번호 오류.
+	 */
+
+	public int deleteArticle(int num, String pass) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		String dbpasswd = "";
+
+		int result = -1;
+
+		try {
+
+			conn = ConnUtil.getConnection();
+			pstmt = conn.prepareStatement("select pass from board where num=?");
+			pstmt.setInt(1, num);
+			rs = pstmt.executeQuery();
+
+			if (rs.next()) {
+				dbpasswd = rs.getString("pass");
+
+				if (dbpasswd.equals(pass)) {
+
+					pstmt = conn.prepareStatement("delete from board where num=?");
+					pstmt.setInt(1, num);
+
+					pstmt.executeUpdate();
+					result = 1;// 글 삭제 성공
+
+				} else {
+					result = 0;// 비밀번호 오류
+				}
+			}
+
+		} catch (SQLException s1) {
+			s1.printStackTrace();
+		} finally {
+			if (rs != null)
+				try {
+					rs.close();
+				} catch (SQLException s1) {
+				}
+			if (pstmt != null)
+				try {
+					pstmt.close();
+				} catch (SQLException s2) {
+				}
+			if (conn != null)
+				try {
+					conn.close();
+				} catch (SQLException s3) {
+				}
+		}
+		return result;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+	public int getArticleCount(String searchWhat,String searchText) {
+
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		int x = 0;
+
+		try {
+			conn = ConnUtil.getConnection();
+			pstmt = conn.prepareStatement("select count(*) from board");
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				x = rs.getInt(1);
+			}
+
+		} catch (SQLException s1) {
+			s1.printStackTrace();
+		} finally {
+			if (rs != null)
+				try {
+					rs.close();
+				} catch (SQLException s1) {
+				}
+			if (pstmt != null)
+				try {
+					pstmt.close();
+				} catch (SQLException s2) {
+				}
+			if (conn != null)
+				try {
+					conn.close();
+				} catch (SQLException s3) {
+				}
+		}
+		return x;
+
+}
+	public List<BoardVO> getArticles(String What, String Text, int start, int end) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		List<BoardVO> articleList = null;
+
+		try {
+			conn = ConnUtil.getConnection();
+
+			// pstmt = conn.prepareStatement("select * from board order by num desc");
+			pstmt = conn.prepareStatement("select * from (" + "select rownum rnum, num, writer, email, subject, "
+					+ "pass, regdate, readcount, ref, step, depth, content, ip from ("
+					+ "select * from board order by ref desc, step asc)) " + "where rnum >=? and rnum <= ? ");
+
+			pstmt.setInt(1, start);
+			pstmt.setInt(2, end);
+			pstmt.setString(3, What);
+			pstmt.setString(4, Text);
+
+			rs = pstmt.executeQuery();
+
+			if (rs.next()) {
+				articleList = new ArrayList<BoardVO>(end - start + 1);
+				do {
+					BoardVO article = new BoardVO();
+					article.setNum(rs.getInt("num"));
+					article.setWriter(rs.getString("writer"));
+					article.setEmail(rs.getString("email"));
+					article.setSubject(rs.getString("subject"));
+					article.setPass(rs.getString("pass"));
+					article.setRegdate(rs.getTimestamp("regdate"));
+					article.setReadcount(rs.getInt("readcount"));
+					article.setRef(rs.getInt("ref"));
+					article.setStep(rs.getInt("step"));
+					article.setDepth(rs.getInt("depth"));
+					article.setContent(rs.getString("content"));
+					article.setIp(rs.getString("ip"));
+					articleList.add(article);
+				} while (rs.next());
+			}
+
+		} catch (SQLException s1) {
+			s1.printStackTrace();
+		} finally {
+			if (rs != null)
+				try {
+					rs.close();
+				} catch (SQLException s1) {
+				}
+			if (pstmt != null)
+				try {
+					pstmt.close();
+				} catch (SQLException s2) {
+				}
+			if (conn != null)
+				try {
+					conn.close();
+				} catch (SQLException s3) {
+				}
+		}
+		return articleList;
+	}
 }
