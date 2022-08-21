@@ -16,15 +16,32 @@ request.setCharacterEncoding("UTF-8");
 <title></title>
 </head>
 <body>
-
 	<%
+	//		로그인 성공했을때
+
+	String userID = null;
+	if (session.getAttribute("userID") != null) {
+		userID = (String) session.getAttribute("userID");
+
+	}
+	//로그인한 사람이 중복 로그인이 안되도록 막아주는것.
+	if (userID != null) {
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("alert('이미 로그인 되어있습니다.')");
+		script.println("location.href = 'main.jsp'");
+		script.println("</script>");
+	}
 	UserDAO userDAO = new UserDAO();
 	int result = userDAO.login(user.getUserID(), user.getUserPassword());
 	if (result == 1) {
+		session.setAttribute("userId", user.getUserID());
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
 		script.println("location.href = 'main.jsp'");
 		script.println("</script>");
+
+		//	 	로그인 실패
 
 	} else if (result == 0) {
 		PrintWriter script = response.getWriter();
@@ -33,13 +50,14 @@ request.setCharacterEncoding("UTF-8");
 		script.println("history.back()");
 		script.println("</script>");
 
+		//	 	아이디가 존재하지 않을때	
 	} else if (result == -1) {
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
 		script.println("alert('존재하지 않는 아이디 입니다.')");
 		script.println("history.back()");
 		script.println("</script>");
-
+		//	 	데이터베이스 오류
 	} else if (result == -2) {
 		PrintWriter script = response.getWriter();
 		script.println("<script>");

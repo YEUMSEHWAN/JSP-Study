@@ -77,7 +77,8 @@ number = count - (currentPage - 1) * pageSize;
 <body bgcolor="<%=bodyback_c%>">
 
 	<div align="center">
-		<b>글 목록(전체 글:<%=count%>)</b>
+		<b>글 목록(전체 글:<%=count%>)
+		</b>
 
 		<table width="700">
 			<tr>
@@ -154,6 +155,7 @@ number = count - (currentPage - 1) * pageSize;
 		%>
 		<%
 		//page block
+
 		if (count > 0) {
 			int pageBlock = 3;
 
@@ -173,20 +175,46 @@ number = count - (currentPage - 1) * pageSize;
 
 			//페이지 블럭을 이전과 다음 처리 작업.
 			if (startPage > pageBlock) {
+
+				//검색일 경우와 아닐경우 페이지 처리를 해야함.
+				if (searchText == null) {
 		%>
 		<a href="list.jsp?pageNum=<%=startPage - pageBlock%>">[이전]</a>
+
 		<%
+		} else {
+		%>
+		<a href="list.jsp?pageNum=<%=startPage - pageBlock%>&searchWhat=<%=searchWhat%>&searchText=<%=searchText%>">[이전]</a>
+		<%
+		}
+
 		} //end if
 		for (int i = startPage; i <= endPage; i++) {
+		if (searchText == null) {
 		%>
 		<a href="list.jsp?pageNum=<%=i%>">[<%=i%>]
 		</a>
+
 		<%
+		} else {
+		%>
+		<a href="list.jsp?pageNum=<%=i%>&searchWhat=<%=searchWhat%>&searchText=<%=searchText%>">[<%=i%>]
+		</a>
+
+
+		<%
+		}
 		} //end for
 		if (endPage < pageCount) {
+		if (searchText == null) {
 		%>
 		<a href="list.jsp?pageNum=<%=startPage + pageBlock%>">[다음]</a>
 		<%
+		} else {
+		%>
+		<a href="list.jsp?pageNum=<%=startPage + pageBlock%>&searchWhat=<%=searchWhat%>&searchText=<%=searchText%>">[다음]</a>
+		<%
+		}
 		} //end if
 		} //end if
 		%>
@@ -198,24 +226,8 @@ number = count - (currentPage - 1) * pageSize;
 				<option value="writer">작성자</option>
 				<option value="subject">제목</option>
 				<option value="content">내용</option>
-			</select> <input type="text" name="serachText"> <input type="submit"
-				value="검색">
-
-
-
-
-
-
+			</select> <input type="text" name="searchText"> <input type="submit" value="검색">
 		</form>
-
-
-
-
-
-
-
-
-
 	</div>
 </body>
 </html>
