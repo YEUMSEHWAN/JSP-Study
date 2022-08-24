@@ -1,7 +1,0 @@
-package com.teamproject;
-
-import java.sql.Timestamp;
-
-public class BoardVO {
-
-}

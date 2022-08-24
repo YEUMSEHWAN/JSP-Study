@@ -1,6 +1,0 @@
-function writeSave(){
-	if(document.writeForm.writer.value==""){
-		alert("이름을 넣어주세요.");
-		document.writeForm.writer.valeu;
-	}
-}
