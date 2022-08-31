@@ -5,6 +5,8 @@ C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\517446357.
 \TeamProject\src\main\java
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3374704473.index
 \ServletProjet\src\main\java
+C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2067418935.index
+\ServletProjet\src\main\java
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4119293395.index
 \TeamProject\src\main\java
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1259861758.index
@@ -28,6 +30,8 @@ C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1055952952
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1205004887.index
 \ServletProjet\src\main\java
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3980352654.index
+\ServletProjet\src\main\java
+C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\68057712.index
 \ServletProjet\src\main\java
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2455727210.index
 \ServletProjet\src\main\java

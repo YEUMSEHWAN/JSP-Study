@@ -5,7 +5,6 @@
     
 <!DOCTYPE html>
 <html>
-<head>
 <title>로그인/회원가입 폼</title>
 <link rel = "stylesheet" href = "css/login.css">
 <meta charset="UTF-8">
@@ -19,18 +18,19 @@
 	<button type = "button" class = "togglebtn" onclick = "register()">회원가입</button>
 	</div>
 	<form id = "login" action="" class = "input-group">
-		<input type = "text" class = "inpur-field" placeholder = "User name or Email" required>
-		<input type = "password" class = "input-field" placeholder = "Enter Password" required>
+		<input type = "text" class = "input-field" placeholder = "아이디 또는 이메일" required>
+		<input type = "password" class = "input-field" placeholder = "비밀번호" required>
 		<input type = "checkbox" class = "checkbox"><span>Remember Password</span>
-		<button class = "submit">로그인</button>
+		<button class = "submit" value = "로그인" onclick = "javascript:window.location='mainPage.jsp'">로그인</button>
 	</form>
 	
 	<form id = "register" action="" class = "input-group">
-		<input type = "text" class = "input-field" placeholder = "User name or Email" required>
-		<input type = "email" class = "input-field" placeholder = "Your Email" required>
-		<input type = "password" class = "input-field" placeholder = "Enter Password" required>
+		<input type = "text" class = "input-field" placeholder = "아이디" required>
+		<input type = "text" class = "input-field" placeholder = "닉네임" required>
+		<input type = "email" class = "input-field" placeholder = "이메일" required>
+		<input type = "password" class = "input-field" placeholder = "비밀번호" required>
 		<input type = "checkbox" class = "checkbox"><span>Terms and conditions</span>
-		<button class = "submit">회원가입</button>
+		<button class = "submit" value = "회원가입" onclick = "javascript:window.location='mainPage.jsp'">회원가입</button>
 	</form>
 	</div>
 	</div>
@@ -38,6 +38,7 @@
 	var x = document.getElementById("login");
 	var y = document.getElementById("register");
 	var z = document.getElementById("btn");
+	
 	
 	function login(){
 		x.style.left = "50px";
