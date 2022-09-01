@@ -25,10 +25,10 @@
 	</form>
 	
 	<form id = "register" action="" class = "input-group">
-		<input type = "text" class = "input-field" placeholder = "아이디" required>
-		<input type = "text" class = "input-field" placeholder = "닉네임" required>
-		<input type = "email" class = "input-field" placeholder = "이메일" required>
-		<input type = "password" class = "input-field" placeholder = "비밀번호" required>
+		<input type = "text" class = "input-field" placeholder = "ID" required>
+		<input type = "text" class = "input-field" placeholder = "NickNAme" required>
+		<input type = "email" class = "input-field" placeholder = "Email" required>
+		<input type = "password" class = "input-field" placeholder = "Password" required>
 		<input type = "checkbox" class = "checkbox"><span>Terms and conditions</span>
 		<button class = "submit" value = "회원가입" onclick = "javascript:window.location='mainPage.jsp'">회원가입</button>
 	</form>

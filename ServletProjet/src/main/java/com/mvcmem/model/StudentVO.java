@@ -26,11 +26,6 @@ public class StudentVO {
 		this.zipcode = zipcode;
 		this.address1 = address1;
 		this.address2 = address2;
-
-		
-		
-		
-		
 	}
 	
 

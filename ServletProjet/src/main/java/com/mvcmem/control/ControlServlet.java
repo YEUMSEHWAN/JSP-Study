@@ -43,6 +43,7 @@ public class ControlServlet extends HttpServlet {
 	
 			PrintWriter out = response.getWriter();
 			
+			
 			out.print("<html>");
 			out.print("<head><title>Error</title></head>");
 			out.print("<body>");
