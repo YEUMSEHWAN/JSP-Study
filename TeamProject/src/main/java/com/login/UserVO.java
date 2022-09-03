@@ -1,59 +1,60 @@
 package com.login;
 
 public class UserVO {
-	
+
 	private String userID;
 	private String userPassword;
-	private String userName;
-	private String userNickname;
 	private String userEmail;
-	private String userGender;
+	private String userName;
 	private String userJumin;
-	
-	
-	
-	
+	private String userAlchol;
+
 	public String getUserID() {
 		return userID;
 	}
+
 	public void setUserID(String userID) {
 		this.userID = userID;
 	}
+
 	public String getUserPassword() {
 		return userPassword;
 	}
-	public void setUserPassword(String userPassword) {
-		this.userPassword = userPassword;
+
+	public void setUserPassword(String password) {
+		userPassword = password;
 	}
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-	public String getUserNickname() {
-		return userNickname;
-	}
-	public void setUserNickname(String userNickname) {
-		this.userNickname = userNickname;
-	}
+
 	public String getUserEmail() {
 		return userEmail;
 	}
-	public void setUserEmail(String userEmail) {
-		this.userEmail = userEmail;
+
+	public void setUserEmail(String userEmil) {
+		this.userEmail = userEmil;
 	}
-	public String getUserGender() {
-		return userGender;
+
+	public String getUserName() {
+		return userName;
 	}
-	public void setUserGender(String userGender) {
-		this.userGender = userGender;
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
+
 	public String getUserJumin() {
 		return userJumin;
 	}
+
 	public void setUserJumin(String userJumin) {
 		this.userJumin = userJumin;
+	}
+
+	public String getUserAlchol() {
+		return userAlchol;
+	}
+
+	public void setUserAlchol(String userAlchol) {
+		this.userAlchol = userAlchol;
 	}
 
 }

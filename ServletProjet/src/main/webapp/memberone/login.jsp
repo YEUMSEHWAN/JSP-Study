@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
     
     <%
-    String loginID = (String)session.getAttribute("loginID");
+    String email = (String)session.getAttribute("email");
     %>
     
     

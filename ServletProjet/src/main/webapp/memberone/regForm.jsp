@@ -37,7 +37,8 @@
 			</tr>
 			<tr>
 				<td align="right">전화번호</td>
-				<td><select name="phone1">
+				<td>
+				<select name="phone1">
 						<option value="02">02</option>
 						<option value="010">010</option>
 						<option value="011">011</option>

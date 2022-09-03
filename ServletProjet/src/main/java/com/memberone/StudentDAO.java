@@ -33,7 +33,8 @@ public class StudentDAO {
 		try {
 			conn = getConnection();
 
-			pstmt = conn.prepareStatement("select * from student where id = ?");
+			pstmt = conn.prepareStatement("select"
+					+ " * from student where id = ?");
 
 			pstmt.setString(1, id);
 
@@ -171,7 +172,8 @@ public class StudentDAO {
 
 	/*
 	 * 로그인 버튼을 클릭하면 입력한 아이디와 비밀번호,개인정보를 데이터베이스에 저장되어있는 아이디와 비밀번호를 비교해서 같으면 로그인 성공,
-	 * 다르면 실패처리. 데이터베이스에서 아이디와 비밀번호를 비교하여 그 결과를 정수형으로 리턴해주는 메소드를 구현 1: 로그인 성공, 0:
+	 * 다르면 실패처리. 데이터베이스에서 아이디와 비밀번호를 비교하여 그 결과를 정수형으로 리턴해주는 메소드를 구현 1: 
+	 * 로그인 성공, 0:
 	 * 비밀번호 오류, -1:아이디 없음
 	 */
 
