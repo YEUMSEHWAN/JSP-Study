@@ -12,10 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.mvc.action.Action;
 
-
-
-
-
 public class controlServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

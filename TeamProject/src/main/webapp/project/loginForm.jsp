@@ -18,7 +18,7 @@ if(loginID != null){//로그인 되었을때 화면 출력
 %>
 <table width = "300" border = "1">
 <tr>
-<td colspan = "3" align = "center"> <%= loginID %>님 환영합니다.</td>
+<td colspan = "3" align = "center"> <%=loginID%>님 환영합니다.</td>
 </tr>
 
 <tr>
@@ -37,11 +37,6 @@ if(loginID != null){//로그인 되었을때 화면 출력
 
 
 </tr>
-
-
-
-
-
 </table>
 
 </body>

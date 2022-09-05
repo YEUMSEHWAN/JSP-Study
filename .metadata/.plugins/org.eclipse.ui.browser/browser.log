@@ -908,3 +908,32 @@
 9월 03, 2022 23:50:12.925 [9292:1616:0903/235012.923:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
 9월 03, 2022 23:50:40.486 [9292:1616:0903/235040.485:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
 9월 03, 2022 23:50:56.890 [9292:1616:0903/235056.890:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+9월 04, 2022 15:56:52.363 [8848:8508:0904/155652.361:ERROR:device_event_log_impl.cc(214)] [15:56:52.362] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 04, 2022 15:56:52.365 [8848:8508:0904/155652.363:ERROR:device_event_log_impl.cc(214)] [15:56:52.364] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 04, 2022 15:57:45.142 [8848:7048:0904/155745.142:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 04, 2022 16:29:37.775 [13084:1068:0904/162937.773:ERROR:device_event_log_impl.cc(214)] [16:29:37.772] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 04, 2022 16:29:37.777 [13084:1068:0904/162937.774:ERROR:device_event_log_impl.cc(214)] [16:29:37.774] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 04, 2022 16:30:34.594 [13084:10752:0904/163034.593:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 04, 2022 17:11:55.850 [12324:10824:0904/171155.847:ERROR:device_event_log_impl.cc(214)] [17:11:55.847] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 04, 2022 17:11:55.852 [12324:10824:0904/171155.849:ERROR:device_event_log_impl.cc(214)] [17:11:55.849] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 04, 2022 17:12:52.471 [12324:5360:0904/171252.470:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 05, 2022 07:38:50.623 [12324:7408:0905/073850.616:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 05, 2022 07:38:51.352 [12324:7408:0905/073851.352:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 05, 2022 07:38:51.492 [12324:9292:0905/073851.492:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+9월 05, 2022 07:38:58.624 [12324:6028:0905/073858.623:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 05, 2022 07:39:25.188 [12324:10824:0905/073925.186:ERROR:device_event_log_impl.cc(214)] [07:39:25.186] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+9월 05, 2022 07:39:25.262 [12324:10824:0905/073925.262:ERROR:device_event_log_impl.cc(214)] [07:39:25.261] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+9월 05, 2022 07:39:25.267 [12324:10824:0905/073925.266:ERROR:device_event_log_impl.cc(214)] [07:39:25.266] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+9월 05, 2022 07:55:27.700 [12324:7408:0905/075527.699:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 05, 2022 08:00:22.704 [12324:10824:0905/080022.703:ERROR:device_event_log_impl.cc(214)] [08:00:22.703] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+9월 05, 2022 08:00:22.711 [12324:10824:0905/080022.710:ERROR:device_event_log_impl.cc(214)] [08:00:22.710] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+9월 05, 2022 08:01:35.846 [12324:10824:0905/080135.844:ERROR:device_event_log_impl.cc(214)] [08:01:35.844] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+9월 05, 2022 08:01:35.865 [12324:10824:0905/080135.864:ERROR:device_event_log_impl.cc(214)] [08:01:35.864] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+9월 05, 2022 08:03:45.695 [12324:10824:0905/080345.694:ERROR:interface_endpoint_client.cc(689)] Message 1 rejected by interface blink.mojom.WidgetHost
+9월 05, 2022 08:32:39.689 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+9월 05, 2022 08:32:41.174 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+9월 05, 2022 12:38:50.656 [12324:4556:0905/123850.641:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 05, 2022 15:08:42.872 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+9월 05, 2022 17:38:50.690 [12324:864:0905/173850.657:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 05, 2022 18:01:08.577 [12324:10824:0905/180108.551:ERROR:device_event_log_impl.cc(214)] [18:01:08.551] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+9월 05, 2022 18:01:08.591 [12324:10824:0905/180108.582:ERROR:device_event_log_impl.cc(214)] [18:01:08.582] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)

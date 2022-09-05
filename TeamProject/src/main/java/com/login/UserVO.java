@@ -9,51 +9,51 @@ public class UserVO {
 	private String userJumin;
 	private String userAlchol;
 
-	public String getUserID() {
+	public String getuserID() {
 		return userID;
 	}
 
-	public void setUserID(String userID) {
+	public void setuserID(String userID) {
 		this.userID = userID;
 	}
 
-	public String getUserPassword() {
+	public String getuserPassword() {
 		return userPassword;
 	}
 
-	public void setUserPassword(String password) {
+	public void setuserPassword(String password) {
 		userPassword = password;
 	}
 
-	public String getUserEmail() {
+	public String getuserEmail() {
 		return userEmail;
 	}
 
-	public void setUserEmail(String userEmil) {
+	public void setuserEmail(String userEmil) {
 		this.userEmail = userEmil;
 	}
 
-	public String getUserName() {
+	public String getuserName() {
 		return userName;
 	}
 
-	public void setUserName(String userName) {
+	public void setuserName(String userName) {
 		this.userName = userName;
 	}
 
-	public String getUserJumin() {
+	public String getuserJumin() {
 		return userJumin;
 	}
 
-	public void setUserJumin(String userJumin) {
+	public void setuserJumin(String userJumin) {
 		this.userJumin = userJumin;
 	}
 
-	public String getUserAlchol() {
+	public String getuserAlchol() {
 		return userAlchol;
 	}
 
-	public void setUserAlchol(String userAlchol) {
+	public void setuserAlchol(String userAlchol) {
 		this.userAlchol = userAlchol;
 	}
 

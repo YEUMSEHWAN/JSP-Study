@@ -105,15 +105,15 @@ function inputCheck() {
 
 
 function updateCheck() {
-
-	
-
-		if (document.regForm.pass.value == "") {
+		
+		var theForm = document.regFrom;
+		
+		if (theForm.pass.value == "") {
 			alert("비밀번호를 입력해주세요.");
 			document.regForm.pass.focus();
 			return;
 		}
-		if (document.regForm.repass.value == "") {
+		if (theForm.repass.value == "") {
 			alert("비밀번호를 똑같이 입력해주세요.");
 			document.regForm.repass.focus();
 			return;

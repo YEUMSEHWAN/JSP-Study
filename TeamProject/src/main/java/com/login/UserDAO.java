@@ -38,7 +38,7 @@ public class UserDAO {
 
 		try {
 			conn = getConnection();
-			pstmt = conn.prepareStatement("select * from USER where userID = ?");
+			pstmt = conn.prepareStatement("select * from user where userID = ?");
 
 			pstmt.setString(1, userID);
 
@@ -68,25 +68,28 @@ public class UserDAO {
 		return result;
 	}
 
-	public boolean memberInsert(UserVO vo) {
+	public boolean memberInsert(UserVO vo) {//db연결
 		boolean flag = false;
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 
 		try {
-
+			Class.forName("com.mysql.jdbc.Driver");
 			conn = getConnection();
+			
+			pstmt = conn.createStatement();
+			
+			 rs = pstmt.executeQuery("insert into user values(?,?,?,?,?,?)");
+			
+			// mySQL에 접속할수 있게 해주는 매개체
 
-			String strQuery = "insert into USER values(?,?,?,?,?,?)";
-			pstmt = conn.prepareStatement(strQuery);
-
-			pstmt.setString(1, vo.getUserID());
-			pstmt.setString(2, vo.getUserPassword());
-			pstmt.setString(3, vo.getUserEmail());
-			pstmt.setString(4, vo.getUserName());
-			pstmt.setString(5, vo.getUserJumin());
-			pstmt.setString(6, vo.getUserAlchol());
+			pstmt.setString(1, vo.getuserID());
+			pstmt.setString(2, vo.getuserPassword());
+			pstmt.setString(3, vo.getuserEmail());
+			pstmt.setString(4, vo.getuserName());
+			pstmt.setString(5, vo.getuserJumin());
+			pstmt.setString(6, vo.getuserAlchol());
 
 			int count = pstmt.executeUpdate();
 
@@ -97,22 +100,7 @@ public class UserDAO {
 			s1.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
-		} finally {
-			if (rs != null)
-				try {
-					rs.close();
-				} catch (SQLException s1) {
-				}
-			if (pstmt != null)
-				try {
-					pstmt.close();
-				} catch (SQLException s2) {
-				}
-			if (conn != null)
-				try {
-					conn.close();
-				} catch (SQLException s3) {
-				}
+		
 		}
 		return flag;
 	}// ------------------end memberInsert---------------------------------
@@ -134,7 +122,7 @@ public class UserDAO {
 		try {
 			conn = getConnection();
 			
-			String strQuery = "select pass from USER where id = ?";
+			String strQuery = "select pass from user where id = ?";
 			pstmt = conn.prepareStatement(strQuery);
 			pstmt.setString(1, userID);
 			rs = pstmt.executeQuery();

@@ -20,7 +20,7 @@ return false;
 </script>
 </head>
 <body onload="begin()">
-	<form action="deleteProc.jsp" method="post" name="myForm" onsubmit="return checkIt()">
+	<form action="member.mdo?cmd=deleteProc" method="post" name="myForm" onsubmit="return checkIt()">
 		<table width ="260" border="1" align="center">
 			<tr>
 				<td colspan="2" align="center"><b>회원탈퇴</b></td>

@@ -9,6 +9,10 @@ import com.mvcmem.action.LogoutProcAction;
 import com.mvcmem.action.RegFormAction;
 import com.mvcmem.action.RegProcAction;
 import com.mvcmem.action.ZipCheckAction;
+import com.mvcmem.action.deleteFormAction;
+import com.mvcmem.action.deleteProcAction;
+import com.mvcmem.action.modifyFormAction;
+import com.mvcmem.action.modifyProcAction;
 
 public class ActionFactory {
 
@@ -63,6 +67,22 @@ public class ActionFactory {
 			action = new ZipCheckAction();
 			break;
 
+		case "modifyForm":
+			action = new modifyFormAction();
+			break;
+			
+		case "modifyProc":
+			action = new modifyProcAction();
+			break;
+			
+		case "deleteForm":
+			action = new deleteFormAction();
+			break;
+			
+		case "deleteProc":
+			action = new deleteProcAction();
+			break;
+			
 		default:
 			action = new IndexAction();
 			break;

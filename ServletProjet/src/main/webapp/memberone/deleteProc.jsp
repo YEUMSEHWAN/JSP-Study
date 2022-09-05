@@ -20,7 +20,7 @@
 			session.invalidate();
 		
 %>
-<meta http-equiv = "Refresh" content = "3;url=login.jsp">
+<meta http-equiv = "Refresh" content = "3;url=member.mdo?cmd=login">
 <body>
 <div align = "center">
 <font size = "5" face = "궁서체">
