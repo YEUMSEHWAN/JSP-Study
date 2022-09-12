@@ -269,6 +269,7 @@ public class StudentDAO {
 			if (pstmt != null)
 				try {
 					pstmt.close();
+					
 				} catch (SQLException s2) {
 				}
 			if (conn != null)

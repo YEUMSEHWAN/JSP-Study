@@ -22,7 +22,7 @@ public class BoardDAO {
 
 	// 이곳에서 부터 게시판 작업 기능을 하나씩 메소드를 추가해 작성하면 됨.
 	// 글을 데이터베이스에 추가하는 메소드
-	public void insertArticle(BoardVO article) {
+	public void insertArticle(com.board.model.BoardVO article) {
 
 		Connection conn = null;
 		PreparedStatement pstmt = null;

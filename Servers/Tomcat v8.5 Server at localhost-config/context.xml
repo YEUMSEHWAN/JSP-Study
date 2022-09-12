@@ -25,13 +25,16 @@
     <!--
     <Manager pathname="" />
     -->
-    <!-- <Resource name="jdbc/myoracle" auth="Container"
+    
+    
+    <!--  <Resource name="jdbc/myoracle" auth="Container"
               type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
               url="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
               username="scott" password="tiger" maxTotal="20" maxIdle="10"
-              maxWaitMillis="-1"/> -->
+              maxWaitMillis="-1"/> --> 
+    
               
-    <Resource name="jdbc/scott" 
+ 	<Resource name="jdbc/scott" 
     type="javax.sql.DataSource" 
  	auth="Container"
  	maxActive="30" 
@@ -43,5 +46,5 @@
  	driverClassName="com.mysql.jdbc.Driver"
  	url="jdbc:mysql://localhost:3306/BBS">
  	</Resource>
-
+ 
 </Context>

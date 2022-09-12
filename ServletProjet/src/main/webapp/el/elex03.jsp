@@ -25,7 +25,7 @@
 		</tr>
 		<tr>
 			<td><b>\${5 div }</b></td>
-			<td><b>${5 div 6 }</b></td>
+			
 		</tr>
 		<tr>
 			<td><b>\${5mod7 }</b></td>
