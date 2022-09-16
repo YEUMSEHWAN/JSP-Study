@@ -1058,3 +1058,11 @@
 9월 12, 2022 16:35:34.425 [7156:11284:0912/163534.420:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Connection failed (-106).
 9월 12, 2022 16:35:59.190 [7156:1500:0912/163559.189:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
 9월 12, 2022 16:36:16.522 [7156:12012:0912/163616.521:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+9월 12, 2022 16:37:40.574 [7156:1500:0912/163740.572:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 12, 2022 16:38:38.858 [10824:8084:0912/163838.854:ERROR:device_event_log_impl.cc(214)] [16:38:38.855] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 12, 2022 16:38:38.860 [10824:8084:0912/163838.856:ERROR:device_event_log_impl.cc(214)] [16:38:38.857] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 12, 2022 16:38:38.988 [10824:12232:0912/163838.987:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 12, 2022 16:39:08.652 [10824:12232:0912/163908.650:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 12, 2022 16:39:33.545 [10824:8812:0912/163933.544:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 12, 2022 16:40:00.820 [10824:12232:0912/164000.819:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 12, 2022 16:41:42.131 [10824:12232:0912/164142.130:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
