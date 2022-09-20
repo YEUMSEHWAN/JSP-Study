@@ -12,6 +12,7 @@ body {
 a {
   text-decoration: none;
   color: var(--text-color);
+  width : 100px;
 }
 
 .navbar {
@@ -19,7 +20,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: var(--background-color);
-  padding: 8px 12px;
+ 
 }
 
 .navbar_logo {
@@ -31,14 +32,14 @@ a {
   color: var(--accent-color);
 }
 
-.navbar_menu {
+.navbar_bar {
   animation-name : dropdown;
   display: flex;
   list-style: none;
-  padding-left: 0;
+  padding-left: 10px;
 }
 
-.navbar_menu li {
+.navbar_bar li {
   position : relative;
   display : block;
   padding: 8px 12px;
@@ -46,7 +47,7 @@ a {
   transition : background-color 200ms ease-out;
 }
 
-.navbar_menu li:hover {
+.navbar_bar li:hover {
   animation-name : dropdown;
   background-color: var(--accent-color);
   border-radius: 4px;
@@ -60,7 +61,7 @@ a {
 }
 
 .navbar_icons li {
-  padding: 8px 12px;
+  padding: 20px 12px;
 }
 
 .navbar_toogleBtn {
@@ -78,18 +79,18 @@ a {
     padding: 8px 24px;
   }
 
-  .navbar_menu {
+  .navbar_bar {
     display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 
-  .navbar_menu li {
+  .navbar_bar li {
     width: 100%;
     text-align: center;
   }
-  .navbar_menu li a {
+  .navbar_bar li a {
     position : relative;
     width: 100%;
     text-align: center;
@@ -103,14 +104,57 @@ a {
     display: none;
     justify-content: center;
     width: 100%;
+    
   }
-
+ .navbar_icons > li > a{
+  font-size : 5px;
+  
+}
   .navbar_toogleBtn {
     display: block;
   }
 
-  .navbar_menu.active,
-  .navbar_icons.active {
+  .navbar_bar.active,
+  .navbar_ icons.active {
     display: flex;
+    text-align:center;
   }
+}
+	.navbar_bar{
+	margin : 16px;
+	width : 100px;
+	text-align : center;
+	
+}
+/* 드롭 다운.. */
+
+.drop-down{
+	width : 100%;
+	padding : 0%;
+	margin : 24px;/*드롭다운 길이*/
+	position : absolute;
+	background-color : var(--background-color);
+	height : 0;
+	overflow : hidden;
+	transition:0.5s;/*드롭다운 내려오는 속도*/
+}
+.navbar_bar > li{
+	position : relative;
+}
+.drop-down > li{
+	list-style-type : none;
+	padding : 10px;
+}
+.dorp-down > li > a{
+	display : flex;
+	width : 100%;
+	height : 30px;
+	margin : 100px;
+	padding : 10px;
+	align-items : center;
+	text-indent : 10px;
+}
+.navbar_bar > li:hover .drop-down{
+	height : 100px;
+	width : 100%;
 }
