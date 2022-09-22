@@ -24,6 +24,8 @@ request.setCharacterEncoding("UTF-8");
 	UserDAO userDAO = new UserDAO();
 	int result = userDAO.login(user.getuserID(), user.getuserPassword());
 	if (result == 1) {
+		String userID = request.getParameter("userID");
+		session.setAttribute("loginID", userID);
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
 		script.println("location.href = 'mainPage.jsp'");

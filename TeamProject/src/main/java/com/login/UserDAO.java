@@ -37,6 +37,7 @@ public class UserDAO {
 	public int login(String userID, String userPassword) {
 		String SQL = "SELECT userPassword FROM user WHERE userID = ?";
 		try {
+			conn = getConnection();
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, userID);
 			rs = pstmt.executeQuery();
@@ -144,6 +145,7 @@ public class UserDAO {
 		return result;
 	} // userID Check end------------
 
+	// 로그인 체크
 	public int loginCheck(String userID, String userPassword) {
 
 		Connection conn = null;
@@ -197,45 +199,137 @@ public class UserDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		UserVO vo = null;
-		
+
 		try {
 			conn = getConnection();
-			String SQL = "select * from user where id =?";
+			String SQL = "select * from user where userid =?";
 			pstmt = conn.prepareStatement(SQL);
-			
+
 			pstmt.setString(1, userID);
 			rs = pstmt.executeQuery();
-			if(rs.next()) {
+			if (rs.next()) {
 				vo = new UserVO();
-				vo.setuserID(rs.getString("id"));
-				vo.setuserPassword(rs.getString("pass"));
-				vo.setuserEmail(rs.getString("email"));
-				vo.setuserName(rs.getString("name"));
-				vo.setuserJumin(rs.getString("jumin"));
-				vo.setuserAlchol(rs.getString("alchol"));
-				
+				vo.setuserID(rs.getString("userID"));
+				vo.setuserPassword(rs.getString("userPassword"));
+				vo.setuserEmail(rs.getString("userEmail"));
+				vo.setuserName(rs.getString("Username"));
+				vo.setuserJumin(rs.getString("Userjumin"));
+				vo.setuserAlchol(rs.getString("Useralchol"));
+
 			}
 		} catch (SQLException s1) {
 			s1.printStackTrace();
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
-		}finally {
-			if(rs != null)
+		} finally {
+			if (rs != null)
 				try {
 					rs.close();
 				} catch (SQLException s1) {
 				}
-			if(pstmt != null)
+			if (pstmt != null)
 				try {
 					pstmt.close();
-				} catch (SQLException s2) {	
+				} catch (SQLException s2) {
 				}
-			if(conn != null) 
+			if (conn != null)
 				try {
 					conn.close();
 				} catch (SQLException s3) {
 				}
 		}
 		return vo;
+	}
+
+	public void updateMember(UserVO vo) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		
+
+		try {
+			conn = getConnection();
+			String SQL = "update user set userPassword = ?, userEmail = ?, userName = ?, userAlchol = ? where userID = ?";
+			pstmt = conn.prepareStatement(SQL);
+
+			pstmt.setString(1, vo.getuserPassword());
+			pstmt.setString(2, vo.getuserEmail());
+			pstmt.setString(3, vo.getuserName());
+			pstmt.setString(4, vo.getuserAlchol());
+			
+			pstmt.executeUpdate();
+			
+		} catch (SQLException s1) {
+			s1.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+		
+			if (pstmt != null)
+				try {
+					pstmt.close();
+				} catch (SQLException s2) {
+				}
+			if (conn != null)
+				try {
+					conn.close();
+				} catch (SQLException s3) {
+				}
+
+		} // end updateMember
+	}
+
+	public int deleteMember(String userID, String userPassword) {
+
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		String dbPass = "";// 데이터베이스에 저장된 비밀번호.
+
+		int result = -1;
+
+		try {
+			conn = getConnection();
+
+			String SQL = "select userPassword from user where id=?";
+
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, userID);
+
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				dbPass = rs.getString("userPassword");
+				if (dbPass.equals(userPassword)) {// 본인확인 ->true
+					pstmt = conn.prepareStatement("delete from user where id=?");
+					pstmt.setString(1, userID);
+					pstmt.executeUpdate();
+					result = 1;// 회원탈퇴 성공시..
+				} else { // 비밀번호 오류-->본인확인 실패
+					result = 0;
+				}
+			}
+		} catch (SQLException s1) {
+			s1.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			if (rs != null)
+				try {
+					rs.close();
+				} catch (SQLException s1) {
+				}
+			if (pstmt != null)
+				try {
+					pstmt.close();
+				} catch (SQLException s2) {
+				}
+			if (conn != null)
+				try {
+					conn.close();
+				} catch (SQLException s3) {
+				}
+		}
+
+		return result;
 	}
 }

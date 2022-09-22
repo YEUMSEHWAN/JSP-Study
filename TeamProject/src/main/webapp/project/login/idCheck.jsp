@@ -3,8 +3,8 @@
 <jsp:useBean id="dao" class="com.login.UserDAO"></jsp:useBean>
 
 <%
-String userID = request.getParameter("id");
-boolean check = dao.idCheck(userID);
+String loginID = request.getParameter("loginid");
+boolean check = dao.idCheck(loginID);
 %>
 <!DOCTYPE html>
 <html>
@@ -16,7 +16,7 @@ boolean check = dao.idCheck(userID);
 <body bgcolor = "#FFFFCC">
 	<br>
 	<div align="center">
-		<b><%=userID%></b>
+		<b><%=loginID%></b>
 		<%
 		if (check) {
 			out.println("는 이미 존재하는 ID입니다.");

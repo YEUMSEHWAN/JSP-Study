@@ -37,12 +37,13 @@ a {
   display: flex;
   list-style: none;
   padding-left: 10px;
+  margin:100%;
 }
 
 .navbar_bar li {
   position : relative;
   display : block;
-  padding: 8px 12px;
+  padding: 10px;
   text-decoration : none;
   transition : background-color 200ms ease-out;
 }
@@ -134,24 +135,28 @@ a {
 	margin : 24px;/*드롭다운 길이*/
 	position : absolute;
 	background-color : var(--background-color);
-	height : 0;
+	height : 13px;
 	overflow : hidden;
 	transition:0.5s;/*드롭다운 내려오는 속도*/
 }
 .navbar_bar > li{
 	position : relative;
+	width : 100px;
+	
 }
 .drop-down > li{
 	list-style-type : none;
 	padding : 10px;
+	display : block;
+	
 }
 .dorp-down > li > a{
 	display : flex;
-	width : 100%;
+	width : 100px;
 	height : 30px;
-	margin : 100px;
-	padding : 10px;
-	align-items : center;
+	margin : 50px;
+	padding : 20px;
+	align-items : left;
 	text-indent : 10px;
 }
 .navbar_bar > li:hover .drop-down{

@@ -61,9 +61,10 @@ function inputCheck() {
 
 function updateCheck() {
 
-	if (document.regForm.pass.value = "") {
+		alert("zzzzzzzzzzzzzzzzzzzzzz.");
+	if (document.regForm.userPassword.value = "") {
 		alert("비밀번호를 입력해주세요.");
-		document.regForm.pass.focus();
+		document.regForm.userPassword.focus();
 		return;
 	}
 
@@ -72,19 +73,19 @@ function updateCheck() {
 		document.regForm.repass.focus();
 		return;
 	}
-	if (document.regForm.psss != document.regForm.repass.value) {
+	if (document.regForm.userPassword.value != document.regForm.repass.value) {
 		alert("비밀번호가 일치하지 않습니다.");
 		document.regForm.repass.focus();
 		return;
 	}
-	if (document.regForm.email.value == "") {
+	if (document.regForm.userEmail.value == "") {
 		alert("이메일을 입력해주세요.");
-		document.regForm.email.focus();
+		document.regForm.userEmail.focus();
 		return;
 	}
 
 	//이메일 형식 검사
-	var str = document.regForm.email.value;
+	var str = document.regForm.userEmail.value;
 	var atPos = str.indexOf('@');
 	var atLastPos = str.lastIndexOf('@');
 	var dotPos = str.indexOf('.');
@@ -95,14 +96,15 @@ function updateCheck() {
 	if (atPos > 1 && atPos == atLastPos && dotPos > 3 && spacePos == -1 && commaPos == -1 && atPos + 1 < dotPos && dotPos + 1 < eMailSize);
 	else {
 		alert("E-mail 주소 형식이 잘못 되었습니다.\n\r 다시 입력해 주세요.");
-		document.regForm.email.focus();
+		document.regForm.userEmail.focus();
 		return;
 	}
-	if (document.regForm.alchol.value = "") {
+	if (document.regForm.userAlchol.value = "") {
 		alert("선호하는 알코올을 입력해주세요.");
-		document.regForm.alchol.focus();
+		document.regForm.userAlchol.focus();
 		return;
 	}
+		alert("zzzzzzzzzzzzzzzzzz22zzzz.");
 	document.regForm.submit();
 
 

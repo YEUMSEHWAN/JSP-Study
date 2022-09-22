@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 <%
 String loginID = (String)session.getAttribute("loginID");
-
 %>
     
     
@@ -24,17 +23,17 @@ String loginID = (String)session.getAttribute("loginID");
 		<input type = "text" class = "input-field" placeholder = "UserID" name="userID" required>
 		<input type = "password" class = "input-field" placeholder = "UserPassword" name = "userPassword" required>
 		<input type = "checkbox" class = "checkbox"><span>Remember Password</span><!-- java 코드로 10분간 동작이 없다면 자동 로그아웃 만들기! -->
-		<button class = "submit" value = "로그인" onclick = "javascript:window.location='mainPage.jsp'">Login</button>
+		<button class = "submit" value = "로그인">Login</button>
 	</form>
 	
 	<form id = "register" action="regProc.jsp" method = "post" class = "input-group2" name = "regForm">
-		<input id = "ID" type = "ID" class = "input-field" placeholder = "UserID" name = "userID" required>
+		<input type = "text" class = "input-field" placeholder = "UserID" name = "userID" required>
 		<input type = "Password" class = "input-field" placeholder = "UserPassword" name = "userPassword" required>
 		<input type = "Email" class = "input-field" placeholder = "UserEmail" name = "userEmail" required>
-		<input type = "Name"  class = "input-field" placeholder = "Name" name = "userName" required>
+		<input type = "Name"  class = "input-field" placeholder = "UserName" name = "userName" required>
 		<input type = "Jumin" class = "input-field" placeholder = "UserJumin" name = "userJumin" required>
 		<input type = "Alchol" class = "input-field" placeholder = "select your type" name = "userAlchol" required>
-		<button class = "submit" value = "회원가입" onclick = "inputCheck()'">Create</button>
+		<button class = "submit" value = "회원가입">Create</button>
 	</form>
 	</div>
 	</div>
