@@ -64,7 +64,7 @@ public class UserDAO {
 		try {
 			conn = getConnection();
 
-			String SQL = "INSERT into user values (?,?,?,?,?,?)";
+			String SQL = "insert into user values(?,?,?,?,?,?)";
 			pstmt = conn.prepareStatement(SQL);
 
 			pstmt.setString(1, vo.getuserID());
@@ -157,7 +157,7 @@ public class UserDAO {
 		try {
 			conn = getConnection();
 
-			String SQL = "select userPassword from user where id =?";
+			String SQL = "select userPassword from user where userID =?";
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, userID);
 
@@ -202,11 +202,12 @@ public class UserDAO {
 
 		try {
 			conn = getConnection();
-			String SQL = "select * from user where userid =?";
+			String SQL = "select * from user where userID =?";
 			pstmt = conn.prepareStatement(SQL);
 
 			pstmt.setString(1, userID);
 			rs = pstmt.executeQuery();
+
 			if (rs.next()) {
 				vo = new UserVO();
 				vo.setuserID(rs.getString("userID"));
@@ -242,28 +243,28 @@ public class UserDAO {
 	}
 
 	public void updateMember(UserVO vo) {
+
 		Connection conn = null;
 		PreparedStatement pstmt = null;
-		
 
 		try {
 			conn = getConnection();
-			String SQL = "update user set userPassword = ?, userEmail = ?, userName = ?, userAlchol = ? where userID = ?";
+			String SQL = "update user set userPassword=?, userEmail=?, userName=?, userAlchol=? where userID=?";
 			pstmt = conn.prepareStatement(SQL);
-
+			
 			pstmt.setString(1, vo.getuserPassword());
 			pstmt.setString(2, vo.getuserEmail());
 			pstmt.setString(3, vo.getuserName());
 			pstmt.setString(4, vo.getuserAlchol());
-			
+			pstmt.setString(5, vo.getuserID());
+
 			pstmt.executeUpdate();
-			
+
 		} catch (SQLException s1) {
 			s1.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-		
 			if (pstmt != null)
 				try {
 					pstmt.close();
@@ -291,7 +292,7 @@ public class UserDAO {
 		try {
 			conn = getConnection();
 
-			String SQL = "select userPassword from user where id=?";
+			String SQL = "select userPassword from user where userID= ?";
 
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, userID);
@@ -300,7 +301,7 @@ public class UserDAO {
 			if (rs.next()) {
 				dbPass = rs.getString("userPassword");
 				if (dbPass.equals(userPassword)) {// 본인확인 ->true
-					pstmt = conn.prepareStatement("delete from user where id=?");
+					pstmt = conn.prepareStatement("delete from user where userID= ?");
 					pstmt.setString(1, userID);
 					pstmt.executeUpdate();
 					result = 1;// 회원탈퇴 성공시..

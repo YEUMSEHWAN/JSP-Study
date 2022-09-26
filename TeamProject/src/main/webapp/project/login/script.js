@@ -61,7 +61,6 @@ function inputCheck() {
 
 function updateCheck() {
 
-		alert("zzzzzzzzzzzzzzzzzzzzzz.");
 	if (document.regForm.userPassword.value = "") {
 		alert("비밀번호를 입력해주세요.");
 		document.regForm.userPassword.focus();
@@ -104,7 +103,6 @@ function updateCheck() {
 		document.regForm.userAlchol.focus();
 		return;
 	}
-		alert("zzzzzzzzzzzzzzzzzz22zzzz.");
 	document.regForm.submit();
 
 

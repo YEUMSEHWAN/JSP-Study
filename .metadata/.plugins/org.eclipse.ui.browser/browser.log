@@ -1082,3 +1082,62 @@
 9월 20, 2022 21:20:37.297 [13072:8360:0920/212037.297:ERROR:device_event_log_impl.cc(214)] [21:20:37.297] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 9월 20, 2022 21:20:37.301 [13072:8360:0920/212037.301:ERROR:device_event_log_impl.cc(214)] [21:20:37.301] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 9월 20, 2022 21:21:33.752 [13072:12552:0920/212133.752:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+9월 23, 2022 20:05:41.458 NEW SESSION
+9월 23, 2022 20:05:41.459 [2504:9424:0923/200541.440:ERROR:device_event_log_impl.cc(214)] [20:05:41.440] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 23, 2022 20:05:41.471 [2504:9424:0923/200541.470:ERROR:device_event_log_impl.cc(214)] [20:05:41.469] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 23, 2022 20:06:36.624 [2504:5196:0923/200636.623:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+9월 24, 2022 12:45:25.832 NEW SESSION
+9월 24, 2022 12:45:25.832 [9044:244:0924/124525.805:ERROR:device_event_log_impl.cc(214)] [12:45:25.805] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 24, 2022 12:45:25.924 [9044:244:0924/124525.923:ERROR:device_event_log_impl.cc(214)] [12:45:25.922] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 24, 2022 12:46:23.548 [9044:7444:0924/124623.401:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 24, 2022 13:07:37.511 [9044:244:0924/130737.510:ERROR:device_event_log_impl.cc(214)] [13:07:37.510] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+9월 24, 2022 15:40:09.804 [9044:6696:0924/154009.799:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 24, 2022 17:34:05.815 [9044:6696:0924/173405.814:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+9월 24, 2022 17:46:23.249 [9044:7260:0924/174623.247:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 24, 2022 21:37:34.729 [9044:6696:0924/213734.728:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 24, 2022 21:37:35.119 [9044:7000:0924/213735.118:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+9월 25, 2022 10:45:53.50 [9044:6696:0925/104553.048:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 10:45:53.270 [9044:2760:0925/104553.269:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+9월 25, 2022 10:45:59.413 [9044:11244:0925/104559.412:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 25, 2022 10:46:22.396 [9044:6696:0925/104622.394:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 10:46:38.283 [9044:10536:0925/104638.282:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+9월 25, 2022 10:47:21.01 [9044:6696:0925/104721.001:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 10:47:45.800 [9044:2760:0925/104745.799:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+9월 25, 2022 10:49:14.898 [9044:6696:0925/104914.897:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 10:49:27.64 [9044:2760:0925/104927.064:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+9월 25, 2022 10:51:13.537 [9044:6696:0925/105113.536:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+9월 25, 2022 10:51:39.04 [9044:6696:0925/105139.004:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 11:21:00.681 [9044:6696:0925/112100.680:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 11:21:28.350 [9044:6696:0925/112128.349:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 11:22:09.713 [9044:6696:0925/112209.712:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 12:22:55.703 [9044:6696:0925/122255.702:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 14:29:56.123 [2388:11968:0925/142956.122:ERROR:device_event_log_impl.cc(214)] [14:29:56.122] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 25, 2022 14:29:56.126 [2388:11968:0925/142956.125:ERROR:device_event_log_impl.cc(214)] [14:29:56.125] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 25, 2022 14:30:51.197 [2388:1448:0925/143051.197:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 25, 2022 14:45:37.944 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+9월 25, 2022 15:25:12.372 [2388:10972:0925/152512.371:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 15:25:16.51 [2388:11968:0925/152516.050:ERROR:device_event_log_impl.cc(214)] [15:25:16.050] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+9월 25, 2022 15:25:36.158 [2388:10972:0925/152536.158:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 15:26:25.991 [2388:10972:0925/152625.990:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 15:28:04.171 [2388:10972:0925/152804.170:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 16:01:19.688 [2388:10972:0925/160119.687:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 16:01:43.116 [2388:10972:0925/160143.116:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+9월 25, 2022 16:01:53.56 [2388:10972:0925/160153.056:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+9월 25, 2022 16:02:08.428 [2388:10972:0925/160208.427:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+9월 25, 2022 16:02:13.344 [2388:10972:0925/160213.343:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 19:54:15.438 [2388:10972:0925/195415.430:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+9월 25, 2022 19:54:18.610 [2388:10972:0925/195418.609:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+9월 25, 2022 19:54:18.621 [2388:7748:0925/195418.620:ERROR:get_updates_processor.cc(260)] PostClientToServerMessage() failed during GetUpdates with error 2
+9월 25, 2022 19:54:24.364 [2388:7884:0925/195424.363:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 25, 2022 23:44:51.851 [2388:10972:0925/234451.845:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+9월 26, 2022 24:54:18.587 [2388:2804:0926/005418.581:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+9월 26, 2022 09:53:59.994 NEW SESSION
+9월 26, 2022 09:53:59.994 [9996:9528:0926/095359.990:ERROR:device_event_log_impl.cc(214)] [09:53:59.991] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 26, 2022 09:53:59.996 [9996:9528:0926/095359.995:ERROR:device_event_log_impl.cc(214)] [09:53:59.996] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 26, 2022 09:54:55.695 [9996:3304:0926/095455.693:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+9월 26, 2022 12:50:07.898 [9996:9528:0926/125007.864:ERROR:device_event_log_impl.cc(214)] [12:50:07.850] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+9월 26, 2022 13:54:19.979 [9996:9528:0926/135418.381:ERROR:interface_endpoint_client.cc(689)] Message 0 rejected by interface blink.mojom.WidgetHost
+9월 26, 2022 14:54:55.750 [9996:7124:0926/145455.728:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

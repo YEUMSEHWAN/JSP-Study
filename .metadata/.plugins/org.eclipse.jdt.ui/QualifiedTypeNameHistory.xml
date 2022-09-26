@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="com.ysh.swingproject.FileDialog"/>
-    <fullyQualifiedTypeName name="javax.swing.JMenuItem"/>
-    <fullyQualifiedTypeName name="javax.servlet.annotation.WebFilter"/>
     <fullyQualifiedTypeName name="com.memberone.ZipCodeVO"/>
     <fullyQualifiedTypeName name="com.memberone.StudentDAO"/>
-    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthColorChooserUI"/>
     <fullyQualifiedTypeName name="com.boardone.ConnUtil"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="com.jstl.MemberVO"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="com.mysql.cj.exceptions.RSAException"/>
     <fullyQualifiedTypeName name="com.mvc.control.ActionForward"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
@@ -35,7 +28,6 @@
     <fullyQualifiedTypeName name="com.mvcmem.action.RegProcAction"/>
     <fullyQualifiedTypeName name="com.mvcmem.action.LoginProcAction"/>
     <fullyQualifiedTypeName name="com.mvcmem.action.LogoutProcAction"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="javax.print.attribute.PrintServiceAttribute"/>
     <fullyQualifiedTypeName name="com.mvcmem.model.StudentDAO"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
@@ -49,15 +41,23 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.boardone.BoardDAO"/>
     <fullyQualifiedTypeName name="oracle.sql.TIMESTAMP"/>
     <fullyQualifiedTypeName name="java.security.Timestamp"/>
-    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
     <fullyQualifiedTypeName name="com.board.model.BoardVO"/>
     <fullyQualifiedTypeName name="com.board.model.BoardDAO"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="javax.naming.Context"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthColorChooserUI"/>
     <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
+    <fullyQualifiedTypeName name="javax.naming.NamingException"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.webresources.EmptyResource"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.board.BoardVO"/>
 </qualifiedTypeNameHistroy>

@@ -11,7 +11,7 @@ function begin(){
 document.myForm.userPassword.focus();
 }
 function checkid(){
-if(!document.myForm.userPass.value){
+if(!document.myForm.userPassword.value){
 alert("비밀번호를 입력하지 않았습니다.")
 document.myForm.userPassword.focus();
 retrun false;
@@ -20,7 +20,7 @@ retrun false;
 </script>
 </head>
 <body onload = "begin()">
-<form action="login.mdo?cmd=deleteProc" method = "post" name = "myForm" onsubmit = "return checkid()">
+<form action="deleteProc.jsp" method = "post" name = "myForm" onsubmit = "return checkid()">
 <table width = "260" border = "1" align = "center">
 <tr>
 <td colspan = "2" align = "center"><b>회원탈퇴</b></td>
@@ -28,7 +28,7 @@ retrun false;
 
 <tr>
 <td width = "150"><b>비밀번호 입력</b></td>
-<td width = "110"><input type = "userPassword" name = "pass" size = "15"></td>
+<td width = "110"><input type = "Password" name = "userPassword" size = "15"></td>
 </tr>
 
 <tr>

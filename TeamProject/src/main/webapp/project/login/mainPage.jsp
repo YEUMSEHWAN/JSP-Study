@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%
-    String loginID = (String)session.getAttribute("loginID");
-    %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +10,7 @@
 <link rel="stylesheet" href="style.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-	href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
 	rel="stylesheet" />
 <title>Drink bar</title>
 <script src="https://kit.fontawesome.com/7e4e126f96.js"
@@ -40,7 +37,7 @@
 			<li><a href="#">커뮤니티</a>
 				<ul class="drop-down">
 					<li><a href="../community/qna.jsp">Q & A</a></li>
-					<li><a href="../community/board.jsp">자유게시판</a></li>
+					<li><a href="../community/list.jsp">자유게시판</a></li>
 				</ul>
 			</li>
 		</ul>

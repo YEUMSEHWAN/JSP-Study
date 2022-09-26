@@ -5,7 +5,6 @@
 <%@ page import="com.login.UserDAO"%>
 <jsp:useBean id="dao" class="com.login.UserDAO"></jsp:useBean>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,11 +12,12 @@
 <title>회원 정보 수정</title>
 <script type="text/javascript" src="script.js"></script>
 </head>
+
 <%
-String loginID = (String) session.getAttribute("loginID");
+String loginID = (String)session.getAttribute("loginID");
+UserDAO usdao = new UserDAO();
 UserVO vo = dao.getMember(loginID);
 %>
-
 
 <body>
 	<form name="regForm" method="post" action="modifyProc.jsp">
@@ -33,17 +33,17 @@ UserVO vo = dao.getMember(loginID);
 
 			<tr>
 				<td align="center">비밀번호</td>
-				<td><input type="password" name="userPassword"
+				<td><input type="userPassword" name="userPassword"
 					value="<%=vo.getuserPassword()%>"></td>
 			</tr>
 			<tr>
 				<td align="center">비밀번호 확인</td>
-				<td><input type="password" name="repass"
+				<td><input type="userPassword" name="repass"
 					value="<%=vo.getuserPassword()%>"></td>
 			</tr>
 			<tr>
 				<td align="center">이메일</td>
-				<td><input type="userEmail" name="userEmail"
+				<td><input type="email" name="userEmail"
 					value="<%=vo.getuserEmail()%>"></td>
 			</tr>
 
@@ -56,12 +56,12 @@ UserVO vo = dao.getMember(loginID);
 				<td align="center">Alchol 선호도</td>
 				<td><input type="userAlchol" name="userAlchol"
 					value="<%=vo.getuserAlchol()%>"></td>
-
 			</tr>
 			<tr>
 				<td colspan="2" align="center">
-				<input type="button" value="수정" onclick="updateCheck()">
-				<input type="button" value="취소" onclick="javascript:window.location = '../myPage/myPage.jsp'"></td>
+				<input type="submit" value="수정" >
+				<input type="button" value="취소" onclick="javascript:window.location = '../myPage/myPage.jsp'">
+				</td>
 			</tr>
 		</table>
 	</form>
