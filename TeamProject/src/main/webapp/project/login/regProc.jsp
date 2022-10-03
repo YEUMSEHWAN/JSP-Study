@@ -49,6 +49,5 @@ boolean flag = dao.memberInsert(vo);
 		script.println("</script>");
 	}
 	%>
-	
 </body>
 </html>

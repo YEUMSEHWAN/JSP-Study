@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="ConnUtil"/>
 		<list key="findhistory">
+			<item value="ConnUtil"/>
+			<item value="ds"/>
 			<item value="CalLogic"/>
 		</list>
 		<list key="replacehistory">

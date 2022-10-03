@@ -9,9 +9,9 @@
 <jsp:useBean id="dao" class="com.login.UserDAO" />
 <jsp:useBean id="vo" class="com.login.UserVO"/>
 <%@ include file="view/color.jsp"%>
-<%
-String loginID = (String)session.getAttribute("loginID");
 
+<%
+String loginID = (String) session.getAttribute("loginID");
 %>
 <%
 

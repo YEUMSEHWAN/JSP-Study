@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
-String loginID = (String)session.getAttribute("loginID");
+String loginID = (String) session.getAttribute("loginID");
 %>
-    
-    
+
 <!DOCTYPE html>
 <html>
 <title>로그인/회원가입 폼</title>
@@ -19,6 +19,8 @@ String loginID = (String)session.getAttribute("loginID");
 	<button type = "button" class = "togglebtn" onclick = "login()">Login</button>
 	<button type = "button" class = "togglebtn" onclick = "register()">Create ID</button>
 	</div>
+	<c:choose>
+	<c:when test="${empty userID }">
 	<form id = "login" action="loginAction.jsp" method = "post" class = "input-group1">
 		<input type = "text" class = "input-field" placeholder = "UserID" name="userID" required>
 		<input type = "password" class = "input-field" placeholder = "UserPassword" name = "userPassword" required>
@@ -26,15 +28,18 @@ String loginID = (String)session.getAttribute("loginID");
 		<button class = "submit" value = "로그인">Login</button>
 	</form>
 	
-	<form id = "register" action="regProc.jsp" method = "post" class = "input-group2" name = "regForm">
+	<form id = "register" action="regProc.jsp" method = "post" class = "input-group2">
 		<input type = "text" class = "input-field" placeholder = "UserID" name = "userID" required>
-		<input type = "Password" class = "input-field" placeholder = "UserPassword" name = "userPassword" required>
-		<input type = "Email" class = "input-field" placeholder = "UserEmail" name = "userEmail" required>
+		<input type = "password" class = "input-field" placeholder = "UserPassword" name = "userPassword" required>
+		<input type = "email" class = "input-field" placeholder = "UserEmail" name = "userEmail" required>
 		<input type = "text"  class = "input-field" placeholder = "UserName" name = "userName" required>
 		<input type = "text" class = "input-field" placeholder = "UserJumin" name = "userJumin" required>
 		<input type = "text" class = "input-field" placeholder = "select your type" name = "userAlchol" required>
+		
 		<button class = "submit" value = "회원가입">Create</button>
 	</form>
+	</c:when>
+	</c:choose>
 	</div>
 	</div>
 	<script>

@@ -28,11 +28,7 @@ if(loginID == null){
 
 <tr>
 <td width = "100" align = "center">
-<a href = "../login/modifyForm.jsp">회원 정보 수정</a>
-</td>
-
-<td width = "100" align = "center">
-<a href = "../login/deleteForm.jsp">회원 탈퇴</a>
+<a href = "../login/updateMember.jsp">회원수정 및 탈퇴</a>
 </td>
 
 <td width = "100" align = "center">

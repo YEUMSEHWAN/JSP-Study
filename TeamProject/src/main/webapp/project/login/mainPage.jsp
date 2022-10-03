@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+String loginID = (String) session.getAttribute("loginID");
+%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
 	rel="stylesheet" />
 <title>Drink bar</title>
-<script src="https://kit.fontawesome.com/7e4e126f96.js"
-	crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/7e4e126f96.js"	crossorigin="anonymous"></script>
 <script src="main.js" defer></script>
 </head>
 <body>
