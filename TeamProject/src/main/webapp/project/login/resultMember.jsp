@@ -25,15 +25,13 @@
 			out.println("<h2 class = 'alert alert-danger'>회원가입을 축하드립니다..</h2>");
 		else if(msg.equals("2")){
 			String loginID = (String)session.getAttribute("loginID");
-	}
+			out.println(" <h2 class='alert alert-danger'>" + loginID + "님 환영합니다</h2>");
+		}
 	}else{
 		out.println("<h2 class = 'alert alert-danger'>회원정보가 삭제되었습니다.</h2>");
 	}
 	
 	%>
-
-
 	</div>
-
 </body>
 </html>

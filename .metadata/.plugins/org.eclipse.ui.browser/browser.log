@@ -1159,3 +1159,24 @@
 10월 03, 2022 23:21:53.172 [4116:11700:1003/232153.171:ERROR:device_event_log_impl.cc(214)] [23:21:53.172] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 10월 03, 2022 23:21:53.177 [4116:11700:1003/232153.177:ERROR:device_event_log_impl.cc(214)] [23:21:53.177] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 10월 03, 2022 23:22:31.257 [4116:3200:1003/232231.256:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 04, 2022 07:30:01.41 [4116:3200:1004/073001.036:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 04, 2022 07:30:02.526 [4116:11700:1004/073002.525:ERROR:device_event_log_impl.cc(214)] [07:30:01.428] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+10월 04, 2022 09:44:15.489 [4116:11700:1004/094415.485:ERROR:device_event_log_impl.cc(214)] [09:44:15.485] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+10월 04, 2022 09:44:15.494 [4116:11700:1004/094415.494:ERROR:device_event_log_impl.cc(214)] [09:44:15.493] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+10월 04, 2022 09:44:29.498 [4116:11700:1004/094429.496:ERROR:device_event_log_impl.cc(214)] [09:44:29.496] USB: usb_service_win.cc:166 SetupDiGetDeviceProperty({{4340A6C5-93FA-4706-972C-7B648008A5A7}, 9}) failed: 시스템 호출에 전달된 데이터 영역이 너무 작습니다. (0x7A)
+10월 04, 2022 09:44:29.539 [4116:11700:1004/094429.539:ERROR:device_event_log_impl.cc(214)] [09:44:29.538] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+10월 04, 2022 09:44:29.554 [4116:11700:1004/094429.553:ERROR:device_event_log_impl.cc(214)] [09:44:29.552] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+10월 04, 2022 09:51:57.53 [4116:11700:1004/095157.052:ERROR:device_event_log_impl.cc(214)] [09:51:57.052] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+10월 04, 2022 09:52:50.710 [4116:11700:1004/095250.709:ERROR:interface_endpoint_client.cc(689)] Message 1 rejected by interface blink.mojom.WidgetHost
+10월 04, 2022 11:37:48.759 [4116:11700:1004/113748.747:ERROR:device_event_log_impl.cc(214)] [11:37:48.747] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+10월 04, 2022 11:56:01.45 [4116:11700:1004/115601.039:ERROR:device_event_log_impl.cc(214)] [11:56:01.039] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+10월 04, 2022 11:56:01.53 [4116:11700:1004/115601.053:ERROR:device_event_log_impl.cc(214)] [11:56:01.053] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+10월 04, 2022 13:04:43.616 [4116:2492:1004/130443.615:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 04, 2022 13:04:44.423 [4116:11700:1004/130444.422:ERROR:device_event_log_impl.cc(214)] [13:04:44.422] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+10월 04, 2022 14:01:21.298 [5152:6284:1004/140121.296:ERROR:device_event_log_impl.cc(214)] [14:01:21.296] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 04, 2022 14:01:21.300 [5152:6284:1004/140121.299:ERROR:device_event_log_impl.cc(214)] [14:01:21.299] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 04, 2022 14:02:15.588 [5152:4540:1004/140215.588:ERROR:util.cc(129)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+10월 04, 2022 14:15:55.808 [5152:8684:1004/141555.807:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+10월 04, 2022 14:15:55.951 [5152:8684:1004/141555.950:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+10월 04, 2022 14:30:11.989 [5152:6284:1004/143011.989:ERROR:device_event_log_impl.cc(214)] [14:30:11.987] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+10월 04, 2022 14:37:24.157 [5152:8684:1004/143724.155:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106

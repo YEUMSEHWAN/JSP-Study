@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
 <%@ page import="com.login.UserVO"%>
 <%@ page import="com.login.UserDAO"%>
 <jsp:useBean id="dao" class="com.login.UserDAO"></jsp:useBean>
@@ -13,6 +14,8 @@
 <link rel = "stylesheet" href = "../css/update.css">
 <meta charset="UTF-8">
 </head>
+
+
 <script type="text">
 function begin(){
 document.myForm.userPassword.focus();
@@ -23,6 +26,14 @@ String loginID = (String)session.getAttribute("loginID");
 UserDAO usdao = new UserDAO();
 UserVO vo = dao.getMember(loginID);
 %>
+<sql:setDataSource var="BBS"
+	url="jdbc:mysql://localhost:3306/BBS"
+	driver="com.mysql.jdbc.Driver" user="root" password="tiger" />
+
+<sql:query dataSource="${BBS}" var="resultSet">
+   SELECT * FROM user WHERE userID=?
+   <sql:param value="<%=loginID%>" />
+</sql:query>
 <body onload = "begin()">
 	<div class = "wrap">
 	<div class = "form-wrap">
@@ -31,12 +42,12 @@ UserVO vo = dao.getMember(loginID);
 	<button type = "button" class = "togglebtn" onclick = "update()">Update</button>
 	<button type = "button" class = "togglebtn" onclick = "delete1()">Delete</button>
 	</div>
-	<form id = "update" action="modifyProc.jsp" method = "post" class = "input-group2" name = "regForm">
-		<%=loginID%>님 개인정보입니다.
-		<input type = "password" class = "input-field" placeholder = "UserPassword" name = "userPassword" required>
-		<input type = "password" class = "input-field" placeholder = "Password confirm" name = "user_Password" required>
-		<input type = "email" class = "input-field" placeholder = "UserEmail" name = "userEmail" required>
-		<input type = "text"  class = "input-field" placeholder = "UserName" name = "userName" required>
+	<form id = "update" action="processUpdateMember.jsp" method = "post" class = "input-group2" name = "regForm">
+		<%=loginID%>님 개인정보수정 페이지입니다.
+		<input type = "password" class = "input-field" placeholder = "NewPassword" name = "userPassword" required>
+		<input type = "password" class = "input-field" placeholder = "rePassword" name = "user_Password" required>
+		<input type = "email" class = "input-field" placeholder = "NewEmail" name = "userEmail" required>
+		<input type = "text"  class = "input-field" placeholder = "NewName" name = "userName" required>
 		<input type = "text" class = "input-field" placeholder = "select your type" name = "userAlchol" required>		
 		<button class = "submit1" value = "정보수정">회원정보수정</button>
 		<button class = "submit1" value = "취소" 

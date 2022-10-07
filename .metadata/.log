@@ -7184,3 +7184,15 @@ Binding(ALT+SHIFT+ARROW_RIGHT,
 
 !ENTRY org.eclipse.lsp4e 1 0 2022-10-03 22:18:49.277
 !MESSAGE [Info]	ESLint server running in node v14.15.4
+
+!ENTRY org.eclipse.datatools.connectivity 4 10001 2022-10-04 17:50:23.071
+!MESSAGE Cannot invoke "java.util.HashSet.contains(Object)" because "conns" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.HashSet.contains(Object)" because "conns" is null
+	at org.eclipse.datatools.sqltools.internal.core.ControlConnectionManager.cleanUpServerRelatedMap(ControlConnectionManager.java:261)
+	at org.eclipse.datatools.sqltools.internal.core.ControlConnectionManager.remove(ControlConnectionManager.java:247)
+	at org.eclipse.datatools.sqltools.internal.core.AbstractControlConnection.disconnect(AbstractControlConnection.java:213)
+	at org.eclipse.datatools.sqltools.internal.core.AbstractControlConnection$SQLToolsManagedConnectionListener.closed(AbstractControlConnection.java:515)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:326)
+	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

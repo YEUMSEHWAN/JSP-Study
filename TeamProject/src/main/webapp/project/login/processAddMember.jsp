@@ -14,9 +14,9 @@ String userName = request.getParameter("userName");
 String userJumin = request.getParameter("userJumin");
 String userAlchol = request.getParameter("userAlchol");
 %>
-<sql:setDataSource var = "dataSource" url = "jdbc:mysql://localhost:3306/BBS"
+<sql:setDataSource var = "BBS" url = "jdbc:mysql://localhost:3306/BBS"
 driver = "com.mysql.jdbc.Driver" user = "root" password = "tiger"/>
-<sql:update dataSource = "${dataSource }" var ="resultSet">
+<sql:update dataSource = "${BBS }" var ="resul  tSet">
 insert into user values(?,?,?,?,?,?)
 	<sql:param value = "<%=userID %>"/>
 	<sql:param value = "<%=userPassword %>"/>

@@ -6,7 +6,7 @@ session.invalidate();//session 무효
 
 
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
 <meta charset="UTF-8">
 <title>logout</title>
