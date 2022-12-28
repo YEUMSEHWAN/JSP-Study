@@ -300,7 +300,7 @@ public class UserDAO {
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
 				dbPass = rs.getString("userPassword");
-				if (dbPass.equals(userPassword)) {// 본인확인 ->true
+				if (dbPass.equals(userPassword)) {// 본인확인 -> true
 					pstmt = conn.prepareStatement("delete from user where userID= ?");
 					pstmt.setString(1, userID);
 					pstmt.executeUpdate();

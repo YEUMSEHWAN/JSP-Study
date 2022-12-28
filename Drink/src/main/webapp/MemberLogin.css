@@ -1,0 +1,112 @@
+@charset "UTF-8";
+main{
+    background-color: rgb(215, 218, 224);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginTitle{
+    margin-top: 200px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(7, 3, 22);
+}
+
+.loginTable{
+    width: 310px;
+    margin-bottom: 200px;
+    padding: 8px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    background-color: rgb(244, 244, 244);
+    border-radius: 3px;
+    box-shadow: 2px 3px 5px rgb(169, 169, 169);
+}
+
+.eachRow{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.login_signup{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.signup{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -0.2px;
+}
+
+.signupButton{
+    border: none;
+    margin-left: 10px;
+    background-color: rgb(211, 210, 210);
+    color: rgb(8, 8, 173);
+    font-size: 14px;
+}
+
+.signupButton:hover{
+    cursor: pointer;
+    background-color: rgb(165, 165, 165);
+}
+.id_pd{
+    display: flex;
+    align-items: center;
+    padding: 11px 19px;
+    background-color: white;
+}
+
+.id{
+    font-size: 18px;
+    width: 90px;
+    color: rgb(0, 0, 0);
+
+}
+.pd{
+    font-size: 18px;
+    width: 90px;
+    color: rgb(0, 0, 0);
+}
+
+input[type=text]{
+    width: 150px;
+    height: 25px;
+    border: none;
+    outline: none;
+    color: rgb(6, 6, 96);
+}
+input[type=password]{
+    width: 150px;
+    height: 25px;
+    border: none;
+    outline: none;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(124, 255, 255);
+}
+input[type=submit]{
+    width: 270px;
+    font-size: 18px;
+    border: none;
+    border-radius: 45px;
+    padding: 3.5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    background-color: rgb(247, 250, 76);
+}

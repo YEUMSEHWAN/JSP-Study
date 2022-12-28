@@ -1,0 +1,73 @@
+@charset "UTF-8";
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.informationTitle{
+    font-size: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+table{
+        border-collapse: collapse;
+        text-align: center;
+        border: 0.8px solid rgb(8, 8, 51);
+        background-color: white;
+        margin-bottom: 15px;
+}
+
+tr{
+    height: 50px;
+}
+
+.each_element{
+    width: 100px;
+    background-color: rgb(185, 208, 210);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    border: 0.5px dashed rgb(172, 172, 172);
+}
+.el{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14.5px;
+    letter-spacing: -0.3px;
+    padding: 0;
+    border: 0.5px dashed rgb(172, 172, 172);
+}
+.el_content{
+    text-align: left;
+    margin-left: 30px;
+}
+.no_viewcount{
+    width: 470px;
+}
+
+.buttons{
+    margin-bottom: 100px;
+    padding: 10px;
+    margin-left: 13%;
+}
+.each_button{
+    background-color: rgb(212, 224, 226);
+    border: none;
+    padding: 9px 22px;
+    border-radius: 20px;
+    margin-left: 10px;
+    border: 1px solid rgb(163, 190, 193);
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.7px;
+}
+.each_button:hover{
+    cursor: pointer;
+    border: 1px solid rgb(163, 190, 193);
+    background-color: rgb(177, 204, 208);
+}

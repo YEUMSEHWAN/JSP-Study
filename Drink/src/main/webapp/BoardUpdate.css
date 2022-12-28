@@ -1,0 +1,75 @@
+@charset "UTF-8";
+html, body{
+	margin: 0;
+	padding:0;
+	width: 100vw;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.rewriteTitle{
+    margin-top: 85px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+table{
+        border-collapse: collapse;
+        margin-bottom: 15px;
+        text-align: center;
+        margin-bottom: 30px;
+        border: 0.8px solid rgb(8, 8, 51);
+        background-color: white;
+}
+th,td{
+    border: 0.5px dashed rgb(172, 172, 172);
+}
+tr{
+    height: 50px;
+}
+
+.each_element{
+    background-color: rgb(185, 208, 210);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    width: 90px;
+}
+.el{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14.5px;
+    letter-spacing: -0.3px;
+}
+.buttons{
+    margin-bottom: 70px;
+    padding: 10px;
+    margin-left: 480px;
+    
+}
+.update_button{
+    background-color: rgb(212, 224, 226);
+    border: none;
+    padding: 9px 22px;
+    border-radius: 20px;
+    margin-left: 10px;
+    border: 1px solid rgb(163, 190, 193);
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.7px;
+}
+input[type=text] input[type=password]{
+    width: 580px;
+}
+
+textarea{
+    width: 540px;
+    height: 200px;
+    margin: 20px;
+}

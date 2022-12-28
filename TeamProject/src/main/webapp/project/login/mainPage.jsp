@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%
 String loginID = (String) session.getAttribute("loginID");
 %>
@@ -39,7 +40,7 @@ String loginID = (String) session.getAttribute("loginID");
 			<li><a href="#">커뮤니티</a>
 				<ul class="drop-down">
 					<li><a href="../community/qna.jsp">Q & A</a></li>
-					<li><a href="../community/list.jsp">자유게시판</a></li>
+					<li><a href="<c:url value = "../BBS/bbs.jsp"/>">게시판</a></li>
 				</ul>
 			</li>
 		</ul>
