@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 String loginID = (String) session.getAttribute("loginID");
 %>
@@ -14,10 +14,12 @@ String loginID = (String) session.getAttribute("loginID");
 <link rel="stylesheet" href="style.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
+<link
+	href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
 	rel="stylesheet" />
 <title>Drink bar</title>
-<script src="https://kit.fontawesome.com/7e4e126f96.js"	crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/7e4e126f96.js"
+	crossorigin="anonymous"></script>
 <script src="main.js" defer></script>
 </head>
 <body>
@@ -32,25 +34,20 @@ String loginID = (String) session.getAttribute("loginID");
 		<ul class="navbar_bar">
 			<li><a href="#">주류목록</a>
 		</ul>
-		<ul class="navbar_bar">
-			<li><a href="#">팀소개</a></li>
-		</ul>
 
 		<ul class="navbar_bar">
 			<li><a href="#">커뮤니티</a>
 				<ul class="drop-down">
 					<li><a href="../community/qna.jsp">Q & A</a></li>
 					<li><a href="<c:url value = "../BBS/bbs.jsp"/>">게시판</a></li>
-				</ul>
-			</li>
+				</ul></li>
 		</ul>
 		<ul class="navbar_bar">
 			<li><a href="#">마이페이지</a>
 				<ul class="drop-down">
 					<li><a href="../myPage/myPage.jsp">내정보</a></li>
 					<li><a href="#">좋아요</a></li>
-				</ul>
-			</li>
+				</ul></li>
 		</ul>
 		<ul class="navbar_icons">
 			<li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.memberone.ZipCodeVO"/>
-    <fullyQualifiedTypeName name="com.memberone.StudentDAO"/>
     <fullyQualifiedTypeName name="com.boardone.ConnUtil"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="com.board.BoardVO"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.parser.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
