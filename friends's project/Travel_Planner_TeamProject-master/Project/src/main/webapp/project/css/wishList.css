@@ -1,0 +1,149 @@
+@charset "UTF-8";
+html, body {
+	width: 100%;
+	height: auto;
+	Font-family: 'Gowun Dodum', sans-serif;
+}
+
+body {
+	background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url(../images/clouds.jpg);
+	background-attachment: fixed;
+}
+
+/* ㅡㅡㅡㅡㅡㅡ 정보 ㅡㅡㅡㅡㅡㅡ */
+#wishList_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 60%;
+	padding-top: 100px;
+	padding-bottom: 25px;
+}
+#firstWord_id, #nickname, #profile, #myPlan, #wishList {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#profile:hover, #myPlan:hover, #wishList:hover {
+	color: white;
+	background-color: #98dde3;
+	cursor: pointer;
+}
+#firstWord_id {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	font-size: 3em;
+	margin-bottom: 20px;
+	background-color: black;
+	color: white;
+}
+#nickname {
+	width: 150px;
+	height: 50px;
+	margin-bottom: 20px;
+	border-radius: 1%;
+	font-size: 1.5em;
+}
+#profile {
+	width: 150px;
+	height: 50px;
+	margin-bottom: 20px;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 1%;
+}
+#myPlan_wishList_wrap {
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+	justify-content: space-around;
+}
+#myPlan {
+	width: 130px;
+	height: 50px;
+	border: 1px solid #ccc;
+	border-radius: 1%;
+	background-color: white;
+}
+#wishList {
+	width: 130px;
+	height: 50px;
+	border: 1px solid #ccc;
+	border-radius: 1%;
+	background-color: white;
+}
+
+/* ㅡㅡㅡㅡㅡㅡ 위시리스트, 마이플랜 ㅡㅡㅡㅡㅡㅡ */
+/* ㅡㅡㅡㅡㅡㅡ 마이플랜 ㅡㅡㅡㅡㅡㅡ */
+.mP {
+	display: none;
+	width: 100%;
+}
+.flex_wrap {
+	display: flex;
+	justify-content: center;
+}
+.mP h2 {
+	text-align: center;
+}
+.mP_wrap {
+	display: flex;
+	justify-content:center;
+	width: 550px;
+	height: 125px;
+	border: 1px solid #999;
+	background-color: white;
+	margin: 10px 0 20px 0;
+}
+.mP_wrap_1{
+	flex: 0.85;
+	padding: 5px 0 0 10px;
+}
+.update_wrap {
+	flex: 0.15;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.update_wrap {
+	text-align: center;
+}
+#wishList_makePlan {
+	text-align: center;
+	margin: 20px;
+}
+.wL {
+	display: none;
+	width: 100%;
+	padding-left: 10%;
+}
+.wL_wrap {
+	display: inline-block;
+	width: 300px;
+	height: 400px;
+	border: 1px solid #999;
+	background-color: white;
+	margin: 10px 30px 10px 0;
+}
+.wL_wrap_sub {
+	width: 100%;
+	height: 88%;
+}
+.wL_wrap img {
+	width: 100%;
+	height: 100%;
+}
+.wL_text {
+	margin-top: 12px;
+	color: #999;
+}
+.wL_text:hover {
+	cursor: pointer;
+	color: black;
+}
+
+
+

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* 기본 틀 */
+* {
+	font-family: 'Gowun Dodum', sans-serif;
+}
+#cityContainer {
+	width: 100%;
+	background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url(../images/clouds.jpg);
+    background-attachment: fixed;
+}
+
+/* placehoder 위치 */
+::-webkit-input-placeholder {
+   text-align: center;
+}
+/* 검색 기능 */
+#Search {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+}
+#submitBtn button{
+	border: none;
+	background-color: #0000;
+}
+.menu-link{
+	background-color: #0000;
+	padding: 5px;
+	margin: 25px 5px;
+	font-size: 20px;
+	color: rgb(43, 43, 43);
+	border: none;
+	font-weight: bold;
+}
+.menu {
+	margin-bottom: 20px;
+}
+.menu-active {
+	background-color: #98dde3;
+	color: white;
+	transition: 0.5s;
+}
+#submitBtn input {
+	margin-left: 37px;
+	height: 3em;
+	width: 400px;
+	border-radius: 10px;
+	padding-left: 20px;
+}
+#top_btn{
+	position: fixed;
+	display: inline-block;
+	z-index: 3;
+	right: 0.8%;
+	bottom: 25px;
+}
+/* 도시 정보 화면 */
+.btn-open-popup {
+	display: inline-block;	
+	width: 300px;
+	height: 400px;
+	margin: 35px;
+	box-shadow: 2px 3px 4px 2px rgba(34, 36, 38, 0.15);
+}
+.btn-open-popup  a {
+	text-decoration: none;
+	color: rgb(43, 43, 43);
+}
+#citytext {
+	text-align: center;
+	line-height: 50px;
+}
+.btn1, .btn2, .btn3 { /* 버튼 클릭하기 전 상태 */
+	display: inline-block;
+}
+.img { /* 박스 밖으로 나가는 것을 방지 */
+	overflow: hidden;
+}
+.img img{
+ 	transition: all 0.2s linear;
+}
+.img:hover img {
+ 	transform: scale(1.1);
+}
+/* modal */
+.modal {
+	text-align: left;
+}
+.modal_body {
+	display: flex;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.icon {
+	display: inline-block;
+	padding-top: 20px;
+}
+.icon div {
+	padding-top: 20px;
+}
+#cityInfo {
+	display: flex;
+}
+#cityInfo div {
+	flex: 0.3;
+}
+#cityInfo div div{
+	text-align: center;
+	font-size: 1.3em;
+}
+#cityWrap2 {
+	width: 100%;
+	height: 100%;
+}
+#cityText {
+	width: 100%;
+	height: 100%;
+	padding: 0 40px;
+	text-align: left;
+	line-height: 1em;
+}
+#cityWrap2 > div > h1 {
+	padding-top: 100px;
+	padding-bottom: 0;
+	margin-bottom: 10px;
+	text-align: left;
+	line-height: 1em;
+}
+#cityWrap2 > div > p {
+	padding-top: 20px;
+	text-align: left;
+	line-height: 1.5em;
+	color: #999;
+}
+#cityImage2 {
+	height: 100%;
+}
+#cityImage2 img {
+	height: 100%;
+}
+#plan { /* 일정 만들기 버튼 */
+	text-align: center;
+	background-color: #98dde3;
+	direction: center;
+	padding: 20px;
+	margin-top: 30px;
+	color: white;
+}
+#plan:hover {
+	cursor: pointer;	
+}
+
+@media screen and (max-width: 1200px) {
+	.modal {
+		width: 60% !important;
+		height: 60% !important;
+	}
+	#cityImage2 img {
+		display: none;
+	}
+	
+}

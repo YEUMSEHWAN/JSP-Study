@@ -17,5 +17,10 @@ public class Ex208 {
 		System.out.print("정수 값 입력 : ");
 		int num = sc.nextInt();
 		System.out.println("입력 받은 값 : " + num);
+		
+		int j = 5;
+		int k = 50;
+		int hh = j/k*100;
+		System.out.println(hh);
 	}
 }

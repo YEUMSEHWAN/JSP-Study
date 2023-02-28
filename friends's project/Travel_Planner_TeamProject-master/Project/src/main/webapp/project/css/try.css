@@ -1,0 +1,62 @@
+@charset "UTF-8";
+			html {
+				width: 100%;
+				height: auto;
+			}
+			.recobttn {
+			  display: flex;
+			  justify-content: center;
+			  padding-top: 85px;
+			  padding-bottom: 30px
+			}
+
+		.recobttn > div {
+  			background-color: #98dde3;
+  			width: 100px;
+  			margin: 10px;
+  			text-align: center;
+  			line-height: 50px;
+  			font-size: 25px;
+  			border-radius: 10px
+			}
+
+#mep1, #mep2, #mep3, #mep4, #mep5{
+            height: 500px; 
+            width: 850px;
+            display: none;
+ 			margin:0 auto;
+ 			position: absolute;
+ 			left: 5%;	
+ 			border: 1px,thin;  
+      }
+ 	.explainnames {
+ 	text-align: center;
+ 	
+ 	}
+    .explaincss {
+ 	text-align:center;
+ 	}       
+    .explains_title {
+    font-size: 20px;
+    font-weight: border;
+    margin: 0;
+    }   
+ 
+#explainname1, #explainname2, #explainname3, #explainname4, #explainname5{
+			background-color: beige;
+			color : pink ;
+	 		font-size:60px;
+	 		font-weight:border;
+            display: none;
+ 			position: absolute;
+ 			right: 1%;	 
+			}
+#explain1, #explain2, #explain3, #explain4, #explain5 {
+	 		font-size:14px;
+	 		padding-top: 50px;
+            display: none;
+ 			position: absolute;
+ 			right: 2%;	 
+			}
+			
+			

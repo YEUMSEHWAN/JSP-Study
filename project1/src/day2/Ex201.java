@@ -49,7 +49,10 @@ public class Ex201 {
 		System.out.println("a : ");
 		System.out.println(4*5);
 		
-		
+		int j = 5;
+		int k = 50;
+		int hh = j/k*100;
+		System.out.println(hh);
 
 	}
 

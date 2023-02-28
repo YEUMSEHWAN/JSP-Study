@@ -1,0 +1,410 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+    background: linear-gradient(rgba(250, 250, 250, 0.7),rgba(255,255,255,0.7)),url(../images/clouds.jpg);
+    Font-family: 'Gowun Dodum', sans-serif;
+    width: 100%;
+	height: 100%;
+}
+.container { /*전체 컨테이너*/
+    width: 100%;
+    height: 100%; 
+}
+.container .header { /*헤드 전체*/
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.container .header h1 a { /*헤드바*/
+    text-decoration: none;
+    color: black;
+    font-family: abster;
+}
+.container .header h1 a img{
+	margin-top: 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 20px;
+}
+.container .nav ul li {   /*헤드 네브 바*/
+    display: inline-block;
+    margin: 0 10px;
+
+}
+.container .nav ul li a { /*login logout버튼 */
+    text-decoration: none;
+    color: black;
+}
+.container .nav ul li a:hover{ /*메뉴바 호버기능주면  login 회원가입 파란색으로 바뀜*/
+    color: #1fdfdf;
+}
+#logo img {
+	width: 150px;
+	height: 69px;
+	margin-top: 5px;
+	
+}
+
+
+.rectangle { /*마름모*/
+    height: 620px;
+    width: 620px;
+    opacity: 1;
+    position: relative;
+    transform: scale(1, 0.8) rotate(-45deg);
+    margin-left: 450px;
+	border-radius: 50%;
+	top: 80px;
+    left: 200px;
+   
+}
+.minibox { /*마름모안에 작은 네모*/
+    height: 280px;
+    width:  280px;
+    position: absolute;
+    left: 70px;
+    top: 70px;
+}
+.small1 {  /*시작*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    background-color: #ffdab9;
+    opacity: 0.7;
+}	
+.small1-1 {
+    font-size: 130%;
+    transform: rotate(-315deg);
+    margin-top: 27px;
+    margin-left: 15px;
+    
+}
+.small2 { /*해인*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: #f08080;
+    opacity: 0.7;
+    padding: 0;
+    margin: 0;
+}
+.small1:hover, .small2:hover, .small3:hover, .small4:hover, .small5:hover, .small6:hover, .small7:hover, .small8:hover,
+.small9:hover, .small10:hover, .small11:hover, .small12:hover, .small13:hover, .small14:hover, .small15:hover, .small16:hover, 
+.small17:hover, .small18:hover, .small19:hover, .small20:hover {
+	background-color: white;
+}
+.small2-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 29px;
+    margin-left: 15px;
+}
+.small3 { /*승환*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 200px; 
+    background-color: #f4978e;
+    opacity: 0.7;
+}
+.small3-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 29px;
+    margin-left: 15px;
+}
+.small4 { /*재연*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 300px;
+    background-color: #f8ad9d;
+    opacity: 0.7;
+}
+.small4-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 29px;
+    margin-left: 15px;
+} 
+.small5 { /*찬규*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 400px;
+    background-color: #fbc4ab;
+    opacity: 0.7;
+    
+}
+.small5-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 29px;
+    margin-left: 15px;
+}
+.small6 { /*아시아*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #90e0ef; 
+    opacity: 0.7;
+}
+.small6-1 {
+    font-size: 125%;
+    transform: rotate(-315deg);
+    margin-top: 25px;
+    margin-left: 7px;
+}
+.small7 { /*한국*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    top: 0 ;
+    background-color: #48cae4; 
+    opacity: 0.7;
+}
+.small7-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 29px;
+    margin-left: 15px;
+}
+.small8 { /*일본*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+    top: 0 ;
+    background-color: #00b4d8;
+    opacity: 0.7;
+}
+.small8-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 29px;
+    margin-left: 15px;
+}
+.small9 { /*중국*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 300px;
+    top: 0 ;
+    background-color: #0096c7;
+    opacity: 0.7;
+}
+.small9-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 29px;
+    margin-left: 15px;
+}
+.small10 { /*대만*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 400px;
+    top: 0 ;
+    background-color: #0077b6;
+    opacity: 0.7;
+}
+.small10-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 29px;
+    margin-left: 15px;
+}
+.small11 { /*유럽*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background-color: #ffdd00;
+    opacity: 0.7;
+}
+.small11-1 {
+    font-size: 130%;
+    transform: rotate(-315deg);
+    margin-top: 26px;
+    margin-left: 15px;
+}
+.small12 { /*미대륙*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #b7e4c7;
+    opacity: 0.7;
+}
+.small12-1 {
+    font-size: 125%;
+    transform: rotate(-315deg);
+    margin-top: 24px;
+    margin-left: 8px;
+}
+.small13 { /*스페인*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: 120px;
+    background-color: #ff7b00;
+    opacity: 0.7;
+}
+.small13-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 27px;
+    margin-left: 7px;
+}
+.small14 { /*독일*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: 220px;
+    background-color: #ff9500;
+    opacity: 0.7;
+}
+.small14-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 29px;
+    margin-left: 15px;
+}
+.small15 { /*프랑스*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: 320px;
+    background-color: #ffaa00;
+    opacity: 0.7;
+}
+.small15-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 27px;
+    margin-left: 7px;
+}
+.small16 { /*영국*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20px;
+    bottom:420px;
+    background-color: #ffc300; 
+    opacity: 0.7;
+}
+.small16-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 29px;
+    margin-left: 12px;
+} 
+.small17 { /*괌*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    bottom: 20px;
+    background-color: #40916c; 
+    opacity: 0.7;
+}
+.small17-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 32px;
+    margin-left: 24px;
+}
+.small18 { /*캐나다*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+    bottom: 20px;
+    background-color: #52b788; 
+    opacity: 0.7;
+}
+.small18-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 26px;
+    margin-left: 8px;
+}
+.small19 { /*엘에이*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 300px;
+    bottom: 20px;
+    background-color: #74c69d; 
+    opacity: 0.7;
+}
+.small19-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 30px;
+    margin-left: 23px;
+}
+.small20 { /*뉴욕크*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 400px;
+    bottom: 20px;
+    background-color: #95d5b2; 
+    opacity: 0.7;
+}
+.small20-1 {
+    font-size: 100%;
+    transform: rotate(-315deg);
+    margin-top: 29px;
+    margin-left: 15px;
+}
+a {
+    text-decoration-line: none;
+    font-size: 135%;
+}
+.font {
+    transform: scale(1, 1);
+	font-size: 18px;
+}
+.minibox {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.photo {
+    z-index:3;
+    display:none;
+    transform: rotate(-315deg);
+	width:570px;
+	height:570px;
+	margin: 14px 0 0 14px;
+	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}

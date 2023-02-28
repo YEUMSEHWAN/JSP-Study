@@ -15,7 +15,7 @@ public class Ex212 {
 		for (int i = 1; i <= 9; i++) {
 			for (int j = 2; j <= 9; j++) {
 				int c = i * j;
-				System.out.print(j + "*" + i + "=" + i * j + "\t");
+				System.out.print(i + "*" + j + "=" + i * j + "\t");
 			}
 			System.out.println();
 		}

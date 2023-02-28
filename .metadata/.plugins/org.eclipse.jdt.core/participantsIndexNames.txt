@@ -1,6 +1,6 @@
 INDEX VERSION 1.131
-C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3913443195.index
-\source\JSPBook\src
+C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2883553240.index
+\WebProject\src\main\java
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1727438168.index
 \source\JSPBook\src
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1789279044.index
@@ -75,6 +75,8 @@ C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2486369535
 \source\JSPBook\src
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2571141823.index
 \ServletProject\src\main\java
+C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2207672349.index
+\friends's project\src
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1766852480.index
 \source\JSPBook\src
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3217156807.index
@@ -235,5 +237,5 @@ C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\267387655.
 \source\JSPBook\src
 C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3761538148.index
 \JSPBook\src
-C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2883553240.index
-\WebProject\src\main\java
+C:\webworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3913443195.index
+\source\JSPBook\src

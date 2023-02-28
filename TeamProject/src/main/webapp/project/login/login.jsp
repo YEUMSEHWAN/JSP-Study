@@ -11,7 +11,7 @@ String loginID = (String) session.getAttribute("loginID");
 <link rel = "stylesheet" href = "../css/login.css">
 <meta charset="UTF-8">
 </head>
-<body>
+<body>d
 	<div class = "wrap">
 	<div class = "form-wrap">
 	<div class = "button-wrap">

@@ -1,0 +1,157 @@
+@charset "UTF-8";
+* {
+	margin:0;
+	padding:0;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+/* 전체 크기 800/800 */
+#title {
+	height: 50px;
+	border-bottom: 2px solid #ccc;
+	font-size: 1.5em;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+#imgWrap {
+	width: 60%;
+	height: 420px;
+	padding: 0px 20%;
+	border-bottom: 2px solid #ccc;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+#mainWrap {
+	padding: 10px 15px 0 15px;
+}
+#forFlex {
+	display: flex;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #ccc;
+}
+h2 {
+	margin: 5px 0 0 15px;
+}
+#cityInfoS {
+	height: 20px;
+    margin: 7px 0 0 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(122, 122, 122);
+    border-radius: 3px;
+    color: white;
+}
+/* .btn-active {
+	background-color: #98dde3;
+	color: white;
+	transition: 0.1s;
+}
+.wishList {
+    position: absolute;
+    left: 720px;
+    top: 500px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 10px 8px 0px;
+    padding: 0 10px 15px 10px;
+    font-size: 1.3em;
+    border: 1px solid black;
+    border-radius: 2px;
+} */
+.wishList_t {
+	position: absolute;
+    left: 720px;
+    top: 500px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 10px 8px 0px;
+    padding: 0 10px 15px 10px;
+    font-size: 1.3em;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: #98dde3;
+}
+.wishList_f {
+	position: absolute;
+    left: 720px;
+    top: 500px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 10px 8px 0px;
+    padding: 0 10px 15px 10px;
+    font-size: 1.3em;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.wishList_t a {
+	text-decoration: none;
+	color: white;
+}
+.wishList_f a {
+	text-decoration: none;
+	color: black;
+}
+#imgWrap img {
+	width: 100%;
+	height: 100%;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+#infoWrap {
+	display: flex;
+	margin: 20px 0 20px 5px;
+}
+#peakMonth {
+	flex: 0.25;
+}
+#peakMonth_title {
+	border-left: 10px solid #98dde3;
+	margin-left: 10px;
+}
+#peakMonth_value {
+	padding-top: 10px;
+	margin-left: 23px;
+	font-size: small;
+	color: #999;
+}
+#days2 {
+	flex: 0.375;
+
+}
+#days2_title {
+	border-left: 10px solid #98dde3;
+	margin-left: 10px;
+	
+}
+.days2_value {
+	padding-top: 10px;
+	margin-left: 20px;
+	font-size: small;
+	color: #999;
+}
+#days3 {
+	flex: 0.375;
+	margin-left: 20px;
+}
+#days3_title {
+	border-left: 10px solid #98dde3;
+	margin-left: 10px;
+}
+.days3_value {
+	padding-top: 10px;
+	margin-left: 20px;
+	font-size: small;
+	color: #999;
+}
+#routeWrap {
+	display: flex;
+	padding: 20px 0 0 20px;
+	border-top: 1px solid #ccc;
+}
+#routeWrap_title{
+	border-left: 10px solid #98dde3;
+}
+.routeWrap_value {
+	margin-left: 20px;
+	font-size: small;
+	color: #999;
+}
+

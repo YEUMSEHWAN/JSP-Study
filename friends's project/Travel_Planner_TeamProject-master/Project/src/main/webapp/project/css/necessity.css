@@ -1,0 +1,39 @@
+html, body {
+	height: 100%;
+	Font-family: 'Gowun Dodum', sans-serif;
+}
+
+/* ------------ main ------------ */
+#mainContainer {
+	width: 100%;
+	height: 100%;
+	padding-top: 70px;
+	background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url(../images/clouds.jpg);
+    background-attachment: fixed;
+}
+#n_check {
+	text-align: center;
+	line-height: 80px;
+	font-size: 1.5em;
+	height: 70px;
+	margin-top: 100px;
+}
+#n_memo {
+	background: url(../images/memo.png) no-repeat;
+	margin-left:25%;
+	width:1145px;
+	height: 584px;
+}
+#n_memo_wrap {
+	width: 100%;
+	height: 100%;
+	padding-top: 5%;
+	padding-left: 8%;
+	display: flex;
+}
+.ul_topMargin {
+	margin-top: 30px;
+}
+.li_hover:hover a{
+	color: #ccc;
+}
