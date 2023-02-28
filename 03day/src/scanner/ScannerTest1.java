@@ -14,5 +14,6 @@ public class ScannerTest1 {
 		
 		sc.close();
 	}
+	
 
 }

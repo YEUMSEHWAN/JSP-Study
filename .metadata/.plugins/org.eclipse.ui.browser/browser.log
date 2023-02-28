@@ -1212,3 +1212,37 @@
 2월 17, 2023 16:40:22.169 [1736:6156:0217/164022.157:ERROR:device_event_log_impl.cc(215)] [16:40:22.157] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 2월 17, 2023 16:40:22.171 [1736:6156:0217/164022.158:ERROR:device_event_log_impl.cc(215)] [16:40:22.158] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 2월 17, 2023 16:41:16.293 [1736:11504:0217/164116.293:ERROR:util.cc(134)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+2월 19, 2023 04:25:17.811 [11976:8236:0219/042517.810:ERROR:device_event_log_impl.cc(218)] [04:25:17.810] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 19, 2023 04:25:17.812 [11976:8236:0219/042517.810:ERROR:device_event_log_impl.cc(218)] [04:25:17.810] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 19, 2023 04:25:17.834 [11976:9792:0219/042517.834:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 19, 2023 04:25:38.370 [11976:9792:0219/042538.370:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 27, 2023 15:51:43.531 [2572:6692:0227/155143.530:ERROR:device_event_log_impl.cc(218)] [15:51:43.530] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 27, 2023 15:51:43.532 [2572:6692:0227/155143.530:ERROR:device_event_log_impl.cc(218)] [15:51:43.531] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 27, 2023 15:51:43.608 [2572:6684:0227/155143.607:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 27, 2023 15:51:43.610 [2572:6684:0227/155143.609:ERROR:checkin_request.cc(240)] Check-in request got net error: -106
+2월 27, 2023 18:00:20.133 [3204:12320:0227/180020.132:ERROR:device_event_log_impl.cc(218)] [18:00:20.131] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 27, 2023 18:00:20.135 [3204:12320:0227/180020.132:ERROR:device_event_log_impl.cc(218)] [18:00:20.132] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 27, 2023 18:00:23.972 [3204:11040:0227/180023.971:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 27, 2023 18:00:23.973 [3204:11040:0227/180023.972:ERROR:checkin_request.cc(240)] Check-in request got net error: -106
+2월 27, 2023 18:00:50.607 [3204:11040:0227/180050.606:ERROR:checkin_request.cc(240)] Check-in request got net error: -106
+2월 27, 2023 18:00:50.621 [3204:11040:0227/180050.620:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 27, 2023 18:01:43.663 [3204:11040:0227/180143.662:ERROR:checkin_request.cc(240)] Check-in request got net error: -106
+2월 27, 2023 18:01:49.807 [3204:11040:0227/180149.806:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 27, 2023 18:03:26.698 [3204:11040:0227/180326.698:ERROR:checkin_request.cc(240)] Check-in request got net error: -106
+2월 27, 2023 18:03:43.422 [3204:11040:0227/180343.421:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 27, 2023 18:06:31.710 [9620:10756:0227/180631.707:ERROR:device_event_log_impl.cc(218)] [18:06:31.706] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 27, 2023 18:06:31.712 [9620:10756:0227/180631.709:ERROR:device_event_log_impl.cc(218)] [18:06:31.709] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 27, 2023 18:06:31.740 [9620:3332:0227/180631.739:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 27, 2023 18:06:31.741 [9620:3332:0227/180631.741:ERROR:checkin_request.cc(240)] Check-in request got net error: -106
+2월 27, 2023 18:06:53.693 [9620:3332:0227/180653.693:ERROR:checkin_request.cc(240)] Check-in request got net error: -106
+2월 27, 2023 18:06:56.385 [9620:3332:0227/180656.384:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 27, 2023 18:07:51.429 [9620:3332:0227/180751.428:ERROR:checkin_request.cc(240)] Check-in request got net error: -106
+2월 27, 2023 18:07:55.09 [9620:3332:0227/180755.008:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 27, 2023 18:08:32.708 [2320:6236:0227/180832.704:ERROR:device_event_log_impl.cc(218)] [18:08:32.705] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 27, 2023 18:08:32.710 [2320:6236:0227/180832.706:ERROR:device_event_log_impl.cc(218)] [18:08:32.706] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 27, 2023 18:08:32.762 [2320:10260:0227/180832.762:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 27, 2023 18:08:32.763 [2320:10260:0227/180832.763:ERROR:checkin_request.cc(240)] Check-in request got net error: -106
+2월 27, 2023 18:08:59.735 [2320:10260:0227/180859.734:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+2월 27, 2023 18:09:01.716 [2320:10260:0227/180901.716:ERROR:checkin_request.cc(240)] Check-in request got net error: -106
+2월 27, 2023 18:09:54.227 [2320:10260:0227/180954.227:ERROR:checkin_request.cc(240)] Check-in request got net error: -106
+2월 27, 2023 18:09:55.800 [2320:10260:0227/180955.800:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
